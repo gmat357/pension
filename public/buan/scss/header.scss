@@ -1,0 +1,24 @@
+@import "variable";
+
+.header_container{
+    width:$max_width;
+    height:700px;
+    overflow:hidden;
+    .swiper-container{
+        width:100%;
+        height:700px;
+        .swiper-pagination{
+            span{
+                width:20px;
+                height:20px;
+                background-color:white;
+            }
+        }
+        .swiper-button-next{
+            color:white;
+        }
+        .swiper-button-prev{
+            color:white;
+        }
+    }
+}

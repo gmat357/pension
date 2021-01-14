@@ -1,0 +1,38 @@
+.copyright_container{
+    width:1920px;
+    height:500px;
+    background-color:rgba(255,255,255,0.8);
+    div{
+        float:left;
+        margin:0px 0px 0px 5px;
+    }
+    .left{
+        width:49.5%;
+        height:500px;
+        h6{
+            margin:150px 0px 10px 100px;
+            font-size:20px;
+            font-weight:normal;
+        }
+        h4{
+            margin:0px 0px 10px 100px;
+            font-size:30px;
+        }
+        p{
+            margin:50px 0px 10px 100px;
+            font-size:18px;
+        }
+    }
+    .right{
+        width:49.5%;
+        height:500px;
+        p{
+            margin:150px 0px 10px 100px;
+            font-size:18px;
+            b{
+                font-weight:normal;
+                font-size:14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.footer_container {
+  width: 1920px;
+  height: 100px;
+  background-color: #1e2a29;
+  text-align: right;
+}
+
+.footer_container .footer_logo {
+  float: left;
+  margin: 20px 0px 0px 50px;
+}
+
+.footer_container .footer_copyright {
+  float: right;
+  color: white;
+  font-size: 12px;
+}
+
+.footer_container .footer_copyright p {
+  padding-top: 20px;
+  padding-right: 50px;
+}

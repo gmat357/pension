@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>펜션 포트폴리오</title>
+    <style>
+        body{
+            background:url('../public/img/bg.jpg') no-repeat;
+        }
+        div{
+            width:1920px;
+            text-align:center;
+        }
+        div > ul{
+            width:1200px;
+            margin:13% auto;
+            text-align:center;
+        }
+        div > ul > a > li{
+            width:33%;
+            display:inline-block;
+            font-size:16px;
+            border-radius: 10px;
+            color:white;
+            font-weight:bold;
+            padding:10px 0px;
+        }
+        div > ul > a > li:hover{
+            background-color:rgba(255,255,255,0.4);
+        }
+        div > ul > a > li > img{
+            width:100%;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <a href="/iksan">
+                <li>
+                    <img src="../public/img/iksan.png" alt="배경">
+                    다놀자펜션
+                </li>
+            </a>
+            <a href="/gunsan">
+                <li>
+                    <img src="../public/img/gunsan.png" alt="배경">
+                    군산펜션
+                </li>
+            </a>
+            <a href="/buan">
+                <li>
+                    <img src="../public/img/buan.png" alt="배경">
+                    부안펜션
+                </li>
+            </a>
+        </ul>
+    </div>
+</body>
+</html>

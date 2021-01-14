@@ -1,0 +1,160 @@
+body {
+  overflow-x: hidden;
+}
+
+.room_container {
+  width: 1920px;
+  height: auto;
+  background-color: red;
+  text-align: center;
+}
+
+.room_container .room_list {
+  position: relative;
+  height: 450px;
+}
+
+.room_container .room_list .room_title {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  top: 110px;
+  left: 720px;
+  z-index: 7;
+}
+
+.room_container .room_list .room_title h3 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 45px;
+  color: #444444;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.room_container .room_list .room_title span {
+  position: relative;
+  top: 100px;
+  left: -10px;
+  background-color: white;
+  padding: 15px 35px;
+  font-size: 14px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.room_container .room_list .room_title span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 175px;
+  height: 60px;
+  left: -8px;
+  top: -7px;
+  border: 1px solid white;
+}
+
+.room_container .room_list .hands {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 6;
+  bottom: 170px;
+  left: 940px;
+}
+
+.room_container .room_list .room_left {
+  width: 50%;
+  height: 450px;
+  background-color: blue;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.room_container .room_list .room_left .room_left_bg {
+  width: 100%;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.room_container .room_list .room_left img {
+  width: 100%;
+}
+
+.room_container .room_list .room_right {
+  width: 50%;
+  height: 450px;
+  background-color: purple;
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.room_container .room_list .room_right .room_right_bg {
+  width: 100%;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.room_container .room_list .room_right img {
+  width: 100%;
+}
+
+.room_container .room_list:nth-of-type(2) .room_title h3 {
+  left: 10px;
+}
+
+.room_container .room_list:nth-of-type(2) .room_title span {
+  left: -10px;
+}
+
+.room_container .room_list:nth-of-type(3) .room_title h3 {
+  left: 70px;
+}
+
+.room_container .room_list:nth-of-type(3) .room_title span {
+  left: -10px;
+}
+
+.room_container .room_list:nth-of-type(4) .room_title h3 {
+  left: 70px;
+}
+
+.room_container .room_list:nth-of-type(4) .room_title span {
+  left: -10px;
+}
+
+.room_container .room_list:nth-of-type(5) .room_title h3 {
+  left: 45px;
+}
+
+.room_container .room_list:nth-of-type(5) .room_title span {
+  left: -10px;
+}
+
+.room_container .room_list:nth-of-type(6) .room_title h3 {
+  left: 45px;
+}
+
+.room_container .room_list:nth-of-type(6) .room_title span {
+  left: -10px;
+}
+
+@media(max-width:766px){
+  body{
+    overflow-x: unset;
+  }
+}

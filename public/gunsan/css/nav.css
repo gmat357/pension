@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.after::after, .menu_container ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body {
+  background: url("../gunsan/img/body/bg2.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.menu_container {
+  width: 1920px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 1000;
+}
+
+.menu_container ul {
+  width: 700px;
+  height: 60px;
+  text-align: center;
+  float: left;
+}
+
+.menu_container ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.menu_container ul li a {
+  color: #444444;
+  font-weight: bold;
+}
+
+.menu_container ul li a:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: white;
+}
+
+.menu_container .logo_box {
+  width: 220px;
+  height: 60px;
+  float: left;
+  margin-left: 140px;
+}
+
+.menu_container .reservation_box {
+  width: 148px;
+  height: 60px;
+  float: right;
+}
+
+.menu_container .reservation_box a div {
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #444444;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.menu_container .reservation_box a:hover div {
+  background-color: slateblue;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}

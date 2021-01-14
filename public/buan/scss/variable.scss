@@ -1,0 +1,10 @@
+$max_width:1920px;
+$content_width:1200px;
+
+.after{
+    &::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}

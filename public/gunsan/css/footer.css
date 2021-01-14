@@ -1,0 +1,46 @@
+.copyright_container {
+  width: 1920px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.copyright_container div {
+  float: left;
+  margin: 0px 0px 0px 5px;
+}
+
+.copyright_container .left {
+  width: 49.5%;
+  height: 500px;
+}
+
+.copyright_container .left h6 {
+  margin: 150px 0px 10px 100px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.copyright_container .left h4 {
+  margin: 0px 0px 10px 100px;
+  font-size: 30px;
+}
+
+.copyright_container .left p {
+  margin: 50px 0px 10px 100px;
+  font-size: 18px;
+}
+
+.copyright_container .right {
+  width: 49.5%;
+  height: 500px;
+}
+
+.copyright_container .right p {
+  margin: 150px 0px 10px 100px;
+  font-size: 18px;
+}
+
+.copyright_container .right p b {
+  font-weight: normal;
+  font-size: 14px;
+}

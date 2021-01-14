@@ -1,0 +1,145 @@
+.room_container {
+  width: 1920px;
+  text-align: center;
+  display: inline-block;
+}
+
+.room_container h3 {
+  color: white;
+  margin: 200px 0px 50px 0px;
+  font-size: 26px;
+  position: relative;
+}
+
+.room_container h3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 200px;
+  top: 17px;
+}
+
+.room_container h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 200px;
+  top: 17px;
+}
+
+.room_container .room_list_box {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.room_container .room_list_box ul {
+  width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.room_container .room_list_box ul li {
+  width: 24%;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.room_container .room_list_box ul li:hover {
+  background-color: rgba(233, 233, 233, 0.5);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.room_container .room_list_box ul li ul {
+  width: 100%;
+}
+
+.room_container .room_list_box ul li ul li {
+  width: 80%;
+  color: white;
+}
+
+.room_container .room_list_box ul li ul li img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.room_container .room_list_box ul li ul li:nth-of-type(2) {
+  margin: 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.room_container .room_list_box ul li ul li:nth-of-type(3) {
+  margin: 5px 0px;
+  font-size: 16px;
+}
+
+.room_container .room_list_box ul li ul li:nth-of-type(4) {
+  margin: 5px 0px;
+  font-size: 16px;
+}
+
+.room_container .price_box {
+  width: 1920px;
+  text-align: center;
+  background-color: rgba(38, 0, 128, 0.3);
+  padding: 50px 0px;
+  color: white;
+}
+
+.room_container .price_box table {
+  width: 1400px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-top: 1px solid #9082c0;
+  border-bottom: 1px solid #9082c0;
+}
+
+.room_container .price_box table tr td {
+  border: 1px dotted #5c4c92;
+  height: 30px;
+}
+
+.room_container .price_box p {
+  text-align: left;
+  margin-left: 300px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.room_container .price_info {
+  width: 1920px;
+  height: 700px;
+  background-color: rgba(38, 0, 128, 0.3);
+}
+
+.room_container .price_info ul {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.room_container .price_info ul li {
+  width: 49%;
+  text-align: left;
+  height: 300px;
+  float: left;
+  margin: 5px;
+  color: white;
+  text-shadow: #444444 1px 1px 10px;
+}
+
+.room_container .price_info ul li pre {
+  line-height: 30px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 20px;
+}

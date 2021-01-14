@@ -1,0 +1,84 @@
+.content_container {
+  width: 1920px;
+  text-align: center;
+}
+
+.content_container h3 {
+  color: white;
+  margin: 200px 0px 50px 0px;
+  font-size: 26px;
+  position: relative;
+  display: inline-block;
+}
+
+.content_container h3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 230px;
+  top: 17px;
+}
+
+.content_container h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 230px;
+  top: 17px;
+}
+
+.content_container .main_box {
+  width: 1920px;
+  height: 800px;
+  text-align: left;
+}
+
+.content_container .main_box .main_img_box {
+  width: 40%;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+  margin: 120px 0px 0px 120px;
+}
+
+.content_container .main_box .main_text_box {
+  width: 49%;
+  height: 500px;
+  float: left;
+  color: white;
+  margin: 120px 0px 0px 0px;
+  text-shadow: black 1px 1px 10px;
+  background-color: rgba(128, 0, 128, 0.3);
+}
+
+.content_container .main_box .main_text_box h5 {
+  margin: 20px;
+  font-size: 24px;
+}
+
+.content_container .main_box .main_text_box p {
+  margin: 20px;
+  line-height: 30px;
+}
+
+.content_container .main_box .main_text_box p b {
+  color: #f8dab3;
+}
+
+.content_container .map_box {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.content_container .map_box h3 {
+  color: white;
+  margin: 20px 360px;
+  font-size: 26px;
+  font-weight: normal;
+}

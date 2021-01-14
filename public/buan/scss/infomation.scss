@@ -1,0 +1,64 @@
+@import 'variable';
+
+.content_container{
+    width:$max_width;
+    background-color:#333333;
+    .title_box{
+        width:$content_width;
+        height:94px;
+        margin:0 auto;
+        color:white;
+        h4{
+            margin:30px 0px;
+            display:inline-block;
+            font-size:25px;
+            font-weight:normal;
+        }
+        .submenu_info{
+            width:90%;
+            height:94px;
+            display:inline-block;
+            text-align:right;
+            font-size:13px;
+        }
+    }
+}
+.text_box{
+    width:$content_width + 200;
+    margin:50px auto 110px;
+    h3{
+        font-size:22px;
+        color:#444444;
+        margin:30px 0px;
+    }
+    
+    table{
+        width:100%;
+        margin:30px auto;
+        border-collapse:collapse;
+        text-align:center;
+        font-size:14px;
+        tr{
+            border:1px solid #cccccc;
+            border-left:none;
+            border-right:none;
+            td{
+                height:40px;
+            }
+        }
+        thead{
+            tr{
+                background-color:#e5ecef;
+                font-weight:bold;
+            }
+        }
+        tbody{
+            color:#444444;
+            tr{
+                td:nth-of-type(2){
+                    text-align:left;
+                }
+            }
+        }
+    }
+}
