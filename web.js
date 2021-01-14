@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 3000;
+const port = 8006;
 // buan
 const buanIndexRouter = require('./routers/buan/index');
 const buanAboutRouter = require('./routers/buan/about');
