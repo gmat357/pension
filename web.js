@@ -25,6 +25,9 @@ const gunsanServiceRouter = require('./routers/gunsan/service');
 const gunsanTravelRouter = require('./routers/gunsan/travel');
 const gunsanInfomationRouter = require('./routers/gunsan/infomation');
 
+//  kimje
+const kimjeRouter = require('./routers/kimje/index');
+
 const indexRouter = require('./routers/index');
 
 
@@ -32,6 +35,7 @@ app.use('/public',express.static(path.join(__dirname,"public")));
 app.use('/public/iksan',express.static(path.join(__dirname,"public")));
 app.use('/public/buan',express.static(path.join(__dirname,"public")));
 app.use('/public/gunsan',express.static(path.join(__dirname,"public")));
+app.use('/public/kimje',express.static(path.join(__dirname,"public")));
 app.set('views',path.join(__dirname,"views"));
 app.set('view engine','ejs');
 
@@ -61,4 +65,15 @@ app.get('/gunsan/service',gunsanServiceRouter);
 app.get('/gunsan/travel',gunsanTravelRouter);
 app.get('/gunsan/infomation',gunsanInfomationRouter);
 
+//kimje
+app.get('/kimje',kimjeRouter);
+app.get('/kimje/:query',kimjeRouter);
+// app.get('/kimje/about',kimjeRouter);
+// app.get('/kimje/room',kimjeRouter);
+// app.get('/kimje/service',kimjeRouter);
+// app.get('/kimje/infomation',kimjeRouter);
+// app.get('/kimje/travel',kimjeRouter);
+
+
 app.listen(port,()=>{console.log(port+"server")});
+

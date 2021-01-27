@@ -1,0 +1,65 @@
+@import "variable";
+
+header {
+  display: none;
+}
+
+.main_container {
+  width: $layout_width;
+  text-align: center;
+  .attech_bg {
+    width: $layout_width;
+    height: 500px;
+    background: url("../img/room/attech.jpg") no-repeat;
+    background-attachment: fixed;
+    h3 {
+      padding: 230px 0px;
+      font-size: 48px;
+      color: white;
+      text-shadow: #444444 0 0 15px;
+    }
+  }
+  .one_content_box {
+    width: $layout_width;
+    margin: 10px auto;
+    text-align: left;
+    display: inline-block;
+    ul {
+      width: 60%;
+      margin: 0 auto;
+      li {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    table {
+      width: 80%;
+      margin: 50px auto;
+      text-align: center;
+      border-collapse: collapse;
+      font-size: 13px;
+      border: 1px solid #d4cec4;
+      thead {
+        tr {
+          height: 30px;
+          background-color: #f3f0ea;
+          color: #444444;
+          font-weight: bold;
+          td {
+            border: 1px solid #d4cec4;
+          }
+        }
+      }
+      tbody {
+        tr {
+          height: 50px;
+          td {
+            border: 1px solid #d4cec4;
+          }
+        }
+      }
+    }
+  }
+}

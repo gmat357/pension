@@ -121,7 +121,7 @@
 .room_page_container .end_bg_container {
   width: 1920px;
   height: 400px;
-  background: url("../iksan/img/room_page/end_bg.jpg") no-repeat;
+  background: url("../img/room_page/end_bg.jpg") no-repeat;
   background-attachment: fixed;
   background-size: 1920px 900px;
 }
@@ -134,7 +134,7 @@
     display: block;
     width: 1920px;
     height: 400px;
-    background: url("../iksan/img/room_page/end_bg.jpg") no-repeat;
+    background: url("../img/room_page/end_bg.jpg") no-repeat;
     background-size: 1920px 900px;
   }
 }

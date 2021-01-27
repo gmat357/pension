@@ -1,0 +1,70 @@
+header {
+  display: none;
+}
+
+.main_container {
+  width: 1920px;
+  text-align: center;
+}
+
+.main_container .attech_bg {
+  width: 1920px;
+  height: 500px;
+  background: url("../img/room/attech.jpg") no-repeat;
+  background-attachment: fixed;
+}
+
+.main_container .attech_bg h3 {
+  padding: 230px 0px;
+  font-size: 48px;
+  color: white;
+  text-shadow: #444444 0 0 15px;
+}
+
+.main_container .one_content_box {
+  width: 1920px;
+  margin: 10px auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.main_container .one_content_box ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.main_container .one_content_box ul li {
+  width: 100%;
+}
+
+.main_container .one_content_box ul li img {
+  width: 100%;
+}
+
+.main_container .one_content_box table {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid #d4cec4;
+}
+
+.main_container .one_content_box table thead tr {
+  height: 30px;
+  background-color: #f3f0ea;
+  color: #444444;
+  font-weight: bold;
+}
+
+.main_container .one_content_box table thead tr td {
+  border: 1px solid #d4cec4;
+}
+
+.main_container .one_content_box table tbody tr {
+  height: 50px;
+}
+
+.main_container .one_content_box table tbody tr td {
+  border: 1px solid #d4cec4;
+}

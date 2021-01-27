@@ -1,0 +1,49 @@
+header {
+  display: none;
+}
+
+.main_container {
+  width: 1920px;
+  text-align: center;
+}
+
+.main_container .attech_bg {
+  width: 1920px;
+  height: 500px;
+  background: url("../img/main/attech.jpg") no-repeat;
+  background-attachment: fixed;
+}
+
+.main_container .one_content_box {
+  width: 1200px;
+  margin: 150px auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.main_container .one_content_box .one_content_title_box {
+  width: 45%;
+  height: 300px;
+  float: left;
+}
+
+.main_container .one_content_box .one_content_title_box h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.main_container .one_content_box .one_content_title_box p {
+  font-size: 16px;
+  color: #444444;
+  margin: 20px 0px;
+}
+
+.main_container .one_content_img_box {
+  width: 45%;
+  height: 300px;
+  float: right;
+}
+
+.main_container .one_content_img_box img {
+  width: 100%;
+}

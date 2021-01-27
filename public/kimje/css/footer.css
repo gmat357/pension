@@ -1,0 +1,23 @@
+.footer_container {
+  width: 1920px;
+  height: 200px;
+  background-color: black;
+  text-align: center;
+}
+
+.footer_container .footer_box {
+  width: 1200px;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.footer_container .footer_box p {
+  font-size: 12px;
+  margin: 20px 0px;
+  color: #c7c6c6;
+}
+
+.footer_container .footer_box p:nth-of-type(2) {
+  font-weight: bold;
+  color: white;
+}

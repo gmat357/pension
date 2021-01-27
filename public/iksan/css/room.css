@@ -152,9 +152,3 @@ body {
 .room_container .room_list:nth-of-type(6) .room_title span {
   left: -10px;
 }
-
-@media(max-width:766px){
-  body{
-    overflow-x: unset;
-  }
-}

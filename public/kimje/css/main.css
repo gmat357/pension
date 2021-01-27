@@ -1,0 +1,91 @@
+.main_container {
+  width: 1920px;
+}
+
+.main_container .one_content_box {
+  width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.main_container .one_content_box .one_content_title_box h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.main_container .one_content_box .one_content_title_box p {
+  font-size: 16px;
+  color: #444444;
+  margin: 20px 0px;
+}
+
+.main_container .one_content_box .one_content_menu {
+  width: 100%;
+  margin: 60px 0px;
+}
+
+.main_container .one_content_box .one_content_menu ul {
+  width: 100%;
+  text-align: center;
+}
+
+.main_container .one_content_box .one_content_menu ul li {
+  width: 30%;
+  height: 360px;
+  display: inline-block;
+  margin: 15px;
+  text-align: left;
+}
+
+.main_container .one_content_box .one_content_menu ul li img {
+  width: 100%;
+  height: 250px;
+}
+
+.main_container .one_content_box .one_content_menu ul li h3 {
+  margin: 15px 10px;
+  font-size: 26px;
+  font-weight: normal;
+  color: black;
+}
+
+.main_container .one_content_box .one_content_menu ul li p {
+  margin: 15px 10px;
+  font-size: 14px;
+  color: #444444;
+}
+
+.main_container .one_content_box .one_content_menu ul li:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-shadow: #cccccc 1px 1px 10px;
+          box-shadow: #cccccc 1px 1px 10px;
+}
+
+.main_container .attech_bg {
+  width: 1920px;
+  height: 800px;
+  background: url("../img/main/attech.jpg") no-repeat;
+  background-attachment: fixed;
+}
+
+.main_container .two_content_box {
+  width: 1920px;
+}
+
+.main_container .two_content_box .two_content_title_box {
+  width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.main_container .two_content_box .two_content_title_box h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.main_container .two_content_box .two_content_title_box p {
+  font-size: 16px;
+  color: #444444;
+  margin: 20px 0px;
+}
