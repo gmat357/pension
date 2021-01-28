@@ -1,0 +1,78 @@
+header {
+  display: none;
+}
+
+.main_container {
+  width: 1920px;
+  text-align: center;
+}
+
+.main_container .attech_bg {
+  width: 1920px;
+  height: 500px;
+  background: url("../img/infomation/title_bg.jpg") no-repeat;
+  background-attachment: fixed;
+}
+
+.main_container .attech_bg h3 {
+  padding: 230px 0px;
+  font-size: 48px;
+  color: white;
+  text-shadow: #444444 0 0 15px;
+}
+
+.main_container .one_content_box {
+  width: 1920px;
+  margin: 10px auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.main_container .one_content_box h3 {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.main_container .one_content_box table {
+  width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  border-collapse: collapse;
+  border-top: 2px solid #444444;
+  border-bottom: 2px solid #cccccc;
+}
+
+.main_container .one_content_box table thead tr {
+  height: 50px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: bold;
+  font-size: 14px;
+  color: #666666;
+}
+
+.main_container .one_content_box table thead tr td {
+  position: relative;
+}
+
+.main_container .one_content_box table thead tr td::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 30%;
+  right: 0;
+  top: 35%;
+  background-color: #666666;
+}
+
+.main_container .one_content_box table thead tr td:last-of-type::after {
+  display: none;
+}
+
+.main_container .one_content_box table tbody tr {
+  height: 50px;
+  color: #666666;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+}

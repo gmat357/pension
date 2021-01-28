@@ -1,0 +1,76 @@
+@import "variable";
+
+header {
+  display: none;
+}
+
+.main_container {
+  width: $layout_width;
+  text-align: center;
+  .attech_bg {
+    width: $layout_width;
+    height: 500px;
+    background: url("../img/infomation/title_bg.jpg") no-repeat;
+    background-attachment: fixed;
+    h3 {
+      padding: 230px 0px;
+      font-size: 48px;
+      color: white;
+      text-shadow: #444444 0 0 15px;
+    }
+  }
+  .one_content_box {
+    width: $layout_width;
+    margin: 10px auto;
+    text-align: left;
+    display: inline-block;
+    h3 {
+      text-align: center;
+      margin: 30px 0px;
+    }
+    table {
+      width: $content_width;
+      margin: 50px auto;
+      text-align: center;
+      border-collapse: collapse;
+      border-top: 2px solid #444444;
+      border-bottom: 2px solid #cccccc;
+      thead {
+        tr {
+          height: 50px;
+          background-color: #fafafa;
+          border-bottom: 1px solid #e5e5e5;
+          font-weight: bold;
+          font-size: 14px;
+          color: #666666;
+          td {
+            position: relative;
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 1px;
+              height: 30%;
+              right: 0;
+              top: 35%;
+              background-color: #666666;
+            }
+          }
+          td:last-of-type {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          height: 50px;
+          color: #666666;
+          font-size: 14px;
+          border-bottom: 1px solid #e5e5e5;
+        }
+      }
+    }
+  }
+}

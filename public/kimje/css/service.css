@@ -1,0 +1,57 @@
+header {
+  display: none;
+}
+
+.main_container {
+  width: 1920px;
+  text-align: center;
+}
+
+.main_container .attech_bg {
+  width: 1920px;
+  height: 800px;
+  background: url("../img/service/title_bg.jpg") no-repeat;
+  background-attachment: fixed;
+}
+
+.main_container .attech_bg h3 {
+  padding: 230px 0px;
+  font-size: 48px;
+  color: white;
+  text-shadow: #444444 0 0 15px;
+}
+
+.main_container .one_content_box {
+  width: 1920px;
+  margin: 10px auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.main_container .one_content_box ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.main_container .one_content_box ul li {
+  width: 100%;
+}
+
+.main_container .one_content_box ul li img {
+  width: 100%;
+}
+
+.main_container .text_box {
+  width: 1150px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.main_container .text_box h6 {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.main_container .text_box p {
+  margin-bottom: 20px;
+}

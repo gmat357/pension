@@ -1,0 +1,50 @@
+@import "variable";
+
+header {
+  display: none;
+}
+
+.main_container {
+  width: $layout_width;
+  text-align: center;
+  .attech_bg {
+    width: $layout_width;
+    height: 800px;
+    background: url("../img/service/title_bg.jpg") no-repeat;
+    background-attachment: fixed;
+    h3 {
+      padding: 230px 0px;
+      font-size: 48px;
+      color: white;
+      text-shadow: #444444 0 0 15px;
+    }
+  }
+  .one_content_box {
+    width: $layout_width;
+    margin: 10px auto;
+    text-align: left;
+    display: inline-block;
+    ul {
+      width: 60%;
+      margin: 0 auto;
+      li {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .text_box {
+    width: $content_width - 50;
+    margin: 0 auto;
+    text-align: left;
+    h6 {
+      font-size: 20px;
+      margin: 20px 0px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
