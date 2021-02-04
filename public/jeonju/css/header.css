@@ -1,0 +1,58 @@
+.header_container {
+  width: 1920px;
+  position: relative;
+}
+
+.header_container .text_box {
+  position: absolute;
+  right: 200px;
+  bottom: 200px;
+  color: white;
+  text-align: right;
+  text-shadow: #444444 0 0 15px;
+}
+
+.header_container .text_box h3 {
+  margin: 20px 0px;
+  font-size: 24px;
+}
+
+.header_container .text_box p {
+  margin: 10px 0px;
+  letter-spacing: -1px;
+}
+
+.header_container .text_box a {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 80px;
+  margin: 10px 0px;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.header_container .text_box a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.header_container .UD_box {
+  width: 200px;
+  position: absolute;
+  bottom: 100px;
+  left: 45%;
+  color: white;
+  text-align: center;
+}
+
+.header_container .UD_box img {
+  width: 13%;
+}
+
+.header_container .UD_box h4 {
+  font-size: 14px;
+  font-weight: normal;
+}

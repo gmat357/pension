@@ -1,0 +1,38 @@
+.content_container {
+  width: 1920px;
+}
+
+.content_container .room_sum_title {
+  width: 1920px;
+  border-bottom: 1px solid #444444;
+  padding: 50px 0px;
+}
+
+.content_container .room_sum_title .room_sum_box {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.content_container .room_sum_title .room_sum_box h3 {
+  font-weight: normal;
+  color: #444444;
+  letter-spacing: -1px;
+  margin: 20px 0px;
+}
+
+.content_container .room_sum_title .room_sum_box p {
+  line-height: 30px;
+  color: #444444;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+
+.content_container .swiper-container {
+  width: 1520px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.content_container .swiper-container .swiper-wrapper {
+  width: 1250px;
+}

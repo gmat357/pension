@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+$max_width: 1920px;
+$content_width: 1250px;
+
+.nav_container {
+  width: $max_width;
+  height: 80px;
+  position: fixed;
+  z-index: 1000;
+  .nav_box {
+    width: $content_width;
+    height: 80px;
+    margin: 0 auto;
+    img {
+      float: left;
+    }
+    .menu_box {
+      float: right;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin: 27px;
+        a {
+          font-weight: bold;
+          color: white;
+          font-size: 14px;
+          &:hover {
+            color: red;
+            transition-duration: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}

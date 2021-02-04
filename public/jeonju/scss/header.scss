@@ -1,0 +1,52 @@
+$max_width: 1920px;
+$content_width: 1250px;
+
+.header_container {
+  width: $max_width;
+  position: relative;
+  .text_box {
+    position: absolute;
+    right: 200px;
+    bottom: 200px;
+    color: white;
+    text-align: right;
+    text-shadow: #444444 0 0 15px;
+    h3 {
+      margin: 20px 0px;
+      font-size: 24px;
+    }
+    p {
+      margin: 10px 0px;
+      letter-spacing: -1px;
+    }
+    a {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px 80px;
+      margin: 10px 0px;
+      display: inline-block;
+      border: 1px solid white;
+      &:hover {
+        background-color: white;
+        color: black;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+  .UD_box {
+    width: 200px;
+    position: absolute;
+    bottom: 100px;
+    left: 45%;
+    color: white;
+    text-align: center;
+    img {
+      width: 13%;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}

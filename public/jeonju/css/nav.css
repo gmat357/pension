@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav_container {
+  width: 1920px;
+  height: 80px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav_container .nav_box {
+  width: 1250px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.nav_container .nav_box img {
+  float: left;
+}
+
+.nav_container .nav_box .menu_box {
+  float: right;
+  text-align: center;
+}
+
+.nav_container .nav_box .menu_box li {
+  display: inline-block;
+  margin: 27px;
+}
+
+.nav_container .nav_box .menu_box li a {
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+.nav_container .nav_box .menu_box li a:hover {
+  color: red;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}

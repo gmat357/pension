@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 8006;
+const port = process.env.PORT || 3000;
 // buan
 const buanIndexRouter = require('./routers/buan/index');
 const buanAboutRouter = require('./routers/buan/about');
@@ -27,6 +27,8 @@ const gunsanInfomationRouter = require('./routers/gunsan/infomation');
 
 //  kimje
 const kimjeRouter = require('./routers/kimje/index');
+
+const jeonjuRouter = require('./routers/jeonju/index');
 
 const indexRouter = require('./routers/index');
 
@@ -68,12 +70,8 @@ app.get('/gunsan/infomation',gunsanInfomationRouter);
 //kimje
 app.get('/kimje',kimjeRouter);
 app.get('/kimje/:query',kimjeRouter);
-// app.get('/kimje/about',kimjeRouter);
-// app.get('/kimje/room',kimjeRouter);
-// app.get('/kimje/service',kimjeRouter);
-// app.get('/kimje/infomation',kimjeRouter);
-// app.get('/kimje/travel',kimjeRouter);
 
-
+app.get('/jeonju',jeonjuRouter);
+app.get('/jeonju/:query',jeonjuRouter);
 app.listen(port,()=>{console.log(port+"server")});
 
