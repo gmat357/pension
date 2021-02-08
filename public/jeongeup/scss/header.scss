@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+$max_width: 1920px;
+$content_width: 1200px;
+
+.header_container {
+  width: $max_width;
+  height: 120px;
+  background-color: white;
+  text-align: center;
+  img {
+    margin: 20px 0px;
+  }
+}

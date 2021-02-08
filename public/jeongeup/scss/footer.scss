@@ -1,0 +1,20 @@
+@import "font";
+
+$max_width: 1920px;
+$content_width: 1200px;
+$font: "GmarketSansMedium", sans-serif;
+
+.footer_container {
+  width: $max_width;
+  height: 100px;
+  text-align: center;
+  background-color: #1f2284;
+  line-height: 50px;
+  p {
+    color: white;
+    font-size: 12px;
+    letter-spacing: -1px;
+    font-family: $font;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Nanum_normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.banner_box {
+  width: 1920px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.about {
+  text-align: center;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.about h3 {
+  margin: 50px;
+  font-size: 30px;
+  color: #444444;
+}
+
+.list {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.list li {
+  width: 19.2%;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  -webkit-box-shadow: #cccccc 0 0 14px;
+          box-shadow: #cccccc 0 0 14px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.list li img {
+  width: 100%;
+}
+
+.list li p {
+  color: black;
+  font-size: 12px;
+  text-align: left;
+  margin: 10px 10px;
+}
+
+.list li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.table_box {
+  width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table_box thead tr {
+  background-color: #202382;
+  color: white;
+}
+
+.table_box tbody tr:first-of-type td:first-of-type {
+  background-color: #202382;
+  color: white;
+}
+
+.table_box tr {
+  height: 60px;
+  font-size: 14px;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.table_box tr td {
+  border: 1px solid #cccccc;
+}
+
+.info_text {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.info_text pre {
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+
+.end_content {
+  width: 1920px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/about/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

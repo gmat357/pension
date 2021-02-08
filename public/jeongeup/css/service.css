@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Nanum_normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.banner_box {
+  width: 1920px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.about {
+  text-align: center;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.about h3 {
+  margin: 50px;
+  font-size: 30px;
+  color: #444444;
+}
+
+.service {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service div {
+  width: 49.8%;
+}
+
+.service div img {
+  width: 100%;
+}
+
+.service .left_box {
+  float: left;
+}
+
+.service .right_box {
+  float: right;
+  text-align: left;
+  margin-top: 50px;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.service .right_box h3 {
+  font-size: 36px;
+  margin: 100px 0px 50px;
+  position: relative;
+}
+
+.service .right_box h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: #444444;
+  left: 0;
+  top: -80px;
+}
+
+.service .right_box h6 {
+  font-size: 24px;
+  position: relative;
+}
+
+.service .right_box h6::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #444444;
+  left: 0;
+  top: -30px;
+}
+
+.service .right_box pre {
+  font-family: "GmarketSansMedium", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -1px;
+  margin: 30px 0px;
+}
+
+.content_img {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content_img img {
+  width: 100%;
+}
+
+.end_content {
+  width: 1920px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/service/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

@@ -1,0 +1,38 @@
+@import "font";
+
+$max_width: 1920px;
+$content_width: 1200px;
+$font: "GmarketSansMedium", sans-serif;
+
+.banner_box {
+  width: $max_width;
+  height: 600px;
+  overflow: hidden;
+}
+
+.about {
+  $width: $content_width;
+  text-align: center;
+  font-family: $font;
+  h3 {
+    margin: 50px;
+    font-size: 30px;
+    color: #444444;
+  }
+  pre {
+    font-size: 14px;
+    color: #444444;
+    line-height: 30px;
+    letter-spacing: -1px;
+  }
+}
+
+.end_content {
+  width: $max_width;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/about/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

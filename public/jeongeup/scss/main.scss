@@ -1,0 +1,133 @@
+@import "font";
+
+$max_width: 1920px;
+$content_width: 1200px;
+$font: "GmarketSansMedium", sans-serif;
+
+.about {
+  $width: $content_width;
+  text-align: center;
+  font-family: $font;
+  h3 {
+    margin: 50px;
+    font-size: 30px;
+    color: #444444;
+  }
+  pre {
+    font-size: 14px;
+    color: #444444;
+    line-height: 30px;
+    letter-spacing: -1px;
+  }
+}
+.room {
+  width: $content_width + 200;
+  height: 500px;
+  margin: 50px auto;
+  .room_left {
+    float: left;
+    width: 35%;
+    height: 100%;
+    .room_text {
+      width: 50%;
+      margin: 100px 50px;
+      font-family: $font;
+      h6 {
+        font-size: 16px;
+        color: #a59595;
+        font-weight: normal;
+      }
+      h3 {
+        font-size: 32px;
+        margin: 5px 0px;
+        font-weight: normal;
+      }
+      p {
+        font-size: 14px;
+        letter-spacing: -1px;
+        color: #a59595;
+      }
+      a {
+        display: inline-block;
+        margin: 50px 0px;
+        color: black;
+      }
+      .room_btn_box {
+        span {
+          cursor: pointer;
+        }
+        .right {
+          margin-left: 20px;
+        }
+      }
+    }
+  } // room_left end
+  .room_right {
+    width: 65%;
+    float: left;
+    ul {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+      }
+    }
+  }
+}
+
+.service {
+  width: $content_width + 200;
+  height: 500px;
+  margin: 0 auto;
+  ul {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    li {
+      width: 33%;
+      height: 100%;
+      display: inline-block;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      .service_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition-duration: 0.5s;
+        h3 {
+          color: white;
+          line-height: 500px;
+          font-family: $font;
+          font-weight: normal;
+          letter-spacing: 1px;
+        }
+      }
+      &:hover {
+        .service_bg {
+          opacity: 0;
+          visibility: hidden;
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.end_content {
+  width: $max_width;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/main/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

@@ -30,6 +30,8 @@ const kimjeRouter = require('./routers/kimje/index');
 
 const jeonjuRouter = require('./routers/jeonju/index');
 
+const jeongeupRouter = require('./routers/jeongeup/index');
+
 const indexRouter = require('./routers/index');
 
 
@@ -73,5 +75,8 @@ app.get('/kimje/:query',kimjeRouter);
 
 app.get('/jeonju',jeonjuRouter);
 app.get('/jeonju/:query',jeonjuRouter);
+
+app.get('/jeongeup',jeongeupRouter);
+app.get('/jeongeup/:query',jeongeupRouter);
 app.listen(port,()=>{console.log(port+"server")});
 

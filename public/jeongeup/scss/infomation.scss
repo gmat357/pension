@@ -1,0 +1,85 @@
+@import "font";
+
+$max_width: 1920px;
+$content_width: 1200px;
+$font: "GmarketSansMedium", sans-serif;
+
+.content_container {
+  height: 600px;
+}
+
+.about {
+  $width: $content_width;
+  text-align: center;
+  font-family: $font;
+  h3 {
+    margin: 50px;
+    font-size: 30px;
+    color: #444444;
+  }
+}
+
+.notice {
+  width: $content_width;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  thead {
+    tr {
+      border-bottom: 1px solid #888888;
+      height: 40px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #444444;
+    }
+  }
+  tbody {
+    tr {
+      height: 40px;
+      font-size: 12px;
+      color: #444444;
+      td:nth-of-type(2) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.search_box {
+  width: $content_width;
+  text-align: center;
+  margin: 20px auto;
+  select {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    outline: none;
+  }
+  input[type="text"] {
+    padding: 5px 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  input[type="button"] {
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+    background-color: #444444;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.end_content {
+  width: $max_width;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/travel/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

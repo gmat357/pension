@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Nanum_normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav_container {
+  width: 1920px;
+  height: 55px;
+  background-color: white;
+  text-align: center;
+}
+
+.nav_container ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav_container ul li {
+  width: 19%;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+}
+
+.nav_container ul li a {
+  color: black;
+  font-family: "GmarketSansMedium", sans-serif;
+  color: #1f2284;
+}
+
+.nav_container ul li:hover {
+  background-color: #1f2284;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.nav_container ul li:hover a {
+  color: white;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}

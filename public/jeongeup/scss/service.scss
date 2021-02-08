@@ -1,0 +1,99 @@
+@import "font";
+
+$max_width: 1920px;
+$content_width: 1200px;
+$font: "GmarketSansMedium", sans-serif;
+
+.banner_box {
+  width: $max_width;
+  height: 600px;
+  overflow: hidden;
+}
+
+.about {
+  $width: $content_width;
+  text-align: center;
+  font-family: $font;
+  h3 {
+    margin: 50px;
+    font-size: 30px;
+    color: #444444;
+  }
+}
+
+.service {
+  width: $content_width;
+  margin: 0 auto;
+  text-align: center;
+  div {
+    width: 49.8%;
+    img {
+      width: 100%;
+    }
+  }
+  .left_box {
+    float: left;
+  }
+  .right_box {
+    float: right;
+    text-align: left;
+    margin-top: 50px;
+    font-family: $font;
+    h3 {
+      font-size: 36px;
+      margin: 100px 0px 50px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        background-color: #444444;
+        left: 0;
+        top: -80px;
+      }
+    }
+    h6 {
+      font-size: 24px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color: #444444;
+        left: 0;
+        top: -30px;
+      }
+    }
+    pre {
+      font-family: $font;
+      font-weight: normal;
+      font-size: 14px;
+      letter-spacing: -1px;
+      margin: 30px 0px;
+    }
+  }
+}
+
+.content_img {
+  width: $content_width;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.end_content {
+  width: $max_width;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/service/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

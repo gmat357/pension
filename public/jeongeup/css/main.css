@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Nanum_normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about {
+  text-align: center;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.about h3 {
+  margin: 50px;
+  font-size: 30px;
+  color: #444444;
+}
+
+.about pre {
+  font-size: 14px;
+  color: #444444;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+
+.room {
+  width: 1400px;
+  height: 500px;
+  margin: 50px auto;
+}
+
+.room .room_left {
+  float: left;
+  width: 35%;
+  height: 100%;
+}
+
+.room .room_left .room_text {
+  width: 50%;
+  margin: 100px 50px;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.room .room_left .room_text h6 {
+  font-size: 16px;
+  color: #a59595;
+  font-weight: normal;
+}
+
+.room .room_left .room_text h3 {
+  font-size: 32px;
+  margin: 5px 0px;
+  font-weight: normal;
+}
+
+.room .room_left .room_text p {
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #a59595;
+}
+
+.room .room_left .room_text a {
+  display: inline-block;
+  margin: 50px 0px;
+  color: black;
+}
+
+.room .room_left .room_text .room_btn_box span {
+  cursor: pointer;
+}
+
+.room .room_left .room_text .room_btn_box .right {
+  margin-left: 20px;
+}
+
+.room .room_right {
+  width: 65%;
+  float: left;
+}
+
+.room .room_right ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.room .room_right ul li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.service {
+  width: 1400px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.service ul {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.service ul li {
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service ul li .service_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.service ul li .service_bg h3 {
+  color: white;
+  line-height: 500px;
+  font-family: "GmarketSansMedium", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.service ul li:hover .service_bg {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.end_content {
+  width: 1920px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/main/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

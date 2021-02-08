@@ -7,7 +7,7 @@ exports.nav = ()=>{
                 <li><a href="/jeonju/about">펜션소개</a></li>
                 <li><a href="/jeonju/room">방 소개</a></li>
                 <li><a href="/jeonju/service">서비스</a></li>
-                <li><a href="/jeonju/travel">주변여행기</a></li>
+                <li><a href="/jeonju/travel">주변여행지</a></li>
                 <li><a href="/jeonju/infomation">공지사항</a></li>
             </ul>
         </div>

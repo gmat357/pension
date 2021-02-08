@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Nanum_normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.banner_box {
+  width: 1920px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.about {
+  text-align: center;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.about h3 {
+  margin: 50px;
+  font-size: 30px;
+  color: #444444;
+}
+
+.about pre {
+  font-size: 14px;
+  color: #444444;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+
+.end_content {
+  width: 1920px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/about/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

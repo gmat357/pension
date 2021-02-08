@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Nanum_normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.banner_box {
+  width: 1920px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.about {
+  text-align: center;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.about h3 {
+  margin: 50px;
+  font-size: 30px;
+  color: #444444;
+}
+
+.list {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.list li {
+  width: 49%;
+  font-family: "GmarketSansMedium", sans-serif;
+  float: left;
+  margin: 5px;
+}
+
+.list li img {
+  width: 100%;
+}
+
+.list li h4 {
+  font-size: 20px;
+  margin: 20px 0px;
+  font-weight: normal;
+  position: relative;
+}
+
+.list li h4::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #444444;
+  bottom: -15px;
+  left: 0;
+}
+
+.list li pre {
+  margin: 40px 0px;
+  letter-spacing: -1px;
+  color: #444444;
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 13px;
+}
+
+.end_content {
+  width: 1920px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto 0px;
+  text-align: center;
+  background: url("../img/travel/end_content.jpg") no-repeat;
+  background-attachment: fixed;
+}

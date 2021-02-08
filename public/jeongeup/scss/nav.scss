@@ -1,0 +1,36 @@
+@import "font";
+
+$max_width: 1920px;
+$content_width: 1200px;
+$font: "GmarketSansMedium", sans-serif;
+
+.nav_container {
+  width: $max_width;
+  height: 55px;
+  background-color: white;
+  text-align: center;
+  ul {
+    width: $content_width;
+    margin: 0 auto;
+    li {
+      width: 19%;
+      height: 40px;
+      display: inline-block;
+      line-height: 40px;
+      //   margin: 0 60px;
+      a {
+        color: black;
+        font-family: $font;
+        color: #1f2284;
+      }
+      &:hover {
+        background-color: #1f2284;
+        transition-duration: 0.3s;
+        a {
+          color: white;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+}

@@ -38,7 +38,6 @@ exports.content = ()=>{
                 </p>
             </div>
         </div>
-        <!-- Swiper -->
         <div class="room_sum_title">
             <div class="room_sum_box">
                 <h3>방 미리보기</h3>
