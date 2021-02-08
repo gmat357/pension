@@ -1,0 +1,105 @@
+$max_width: 1920px;
+$content_width: 1250px;
+
+.content_container {
+  width: $max_width;
+  .service_title {
+    width: $max_width;
+    border-bottom: 1px solid #444444;
+    padding: 50px 0px;
+    .service_box {
+      width: $content_width;
+      margin: 0 auto;
+      text-align: center;
+      h3 {
+        font-weight: normal;
+        color: #444444;
+        margin: 20px 0px;
+      }
+      p {
+        line-height: 25px;
+        color: #444444;
+        font-size: 12px;
+        letter-spacing: -1px;
+      }
+      .service_content {
+        width: 100%;
+        margin: 50px 0px;
+        .one_content {
+          width: 100%;
+          height: 577px;
+          .one_left {
+            width: 58%;
+            height: 100%;
+            float: left;
+            img {
+              width: 100%;
+            }
+            p {
+              text-align: right;
+              font-size: 12px;
+              padding: 20px 0px;
+            }
+          }
+          .one_right {
+            width: 40%;
+            height: 100%;
+            float: right;
+            position: relative;
+            img {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+        .two_content {
+          width: 100%;
+          height: 577px;
+          margin-top: 50px;
+          .two_left {
+            width: 58%;
+            height: 100%;
+            float: right;
+            img {
+              width: 100%;
+            }
+            p {
+              text-align: left;
+              font-size: 12px;
+              padding: 20px 0px;
+            }
+          }
+          .two_right {
+            width: 40%;
+            height: 100%;
+            float: left;
+            position: relative;
+            img {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  } // room_sum_title
+}
+.service_attach {
+  width: $max_width;
+  height: 400px;
+  background: url("../img/service/content_3.jpg") no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  h3 {
+    margin: 150px 0px 30px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
+  }
+  p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,73 @@
+$max_width: 1920px;
+$content_width: 1250px;
+
+.content_container {
+  width: $max_width;
+  .service_title {
+    width: $max_width;
+    border-bottom: 1px solid #444444;
+    padding: 50px 0px;
+    .service_box {
+      width: $content_width;
+      margin: 0 auto;
+      text-align: center;
+      h3 {
+        font-weight: normal;
+        color: #444444;
+        margin: 20px 0px;
+      }
+      p {
+        line-height: 25px;
+        color: #444444;
+        font-size: 12px;
+        letter-spacing: -1px;
+      }
+      table {
+        width: 100%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 14px;
+        tr {
+          border: 1px solid #cccccc;
+          border-left: none;
+          border-right: none;
+          td {
+            height: 40px;
+          }
+        }
+        thead {
+          tr {
+            background-color: #e5ecef;
+            font-weight: bold;
+          }
+        }
+        tbody {
+          color: #444444;
+          tr {
+            td:nth-of-type(2) {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+} // room_sum_title
+.service_attach {
+  width: $max_width;
+  height: 400px;
+  background: url("../img/service/content_3.jpg") no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  h3 {
+    margin: 150px 0px 30px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
+  }
+  p {
+    font-size: 13px;
+  }
+}
