@@ -32,6 +32,8 @@ const jeonjuRouter = require('./routers/jeonju/index');
 
 const jeongeupRouter = require('./routers/jeongeup/index');
 
+const gochangRouter = require('./routers/gochang/index');
+
 const indexRouter = require('./routers/index');
 
 
@@ -78,5 +80,9 @@ app.get('/jeonju/:query',jeonjuRouter);
 
 app.get('/jeongeup',jeongeupRouter);
 app.get('/jeongeup/:query',jeongeupRouter);
+
+app.get('/gochang',gochangRouter);
+app.get('/gochang/:query',gochangRouter);
+
 app.listen(port,()=>{console.log(port+"server")});
 

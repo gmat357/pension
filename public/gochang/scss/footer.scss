@@ -1,0 +1,111 @@
+$max_width: 1920px;
+$content_width: 1200px;
+
+.footer_container {
+  width: $max_width;
+  display: inline-block;
+  .map_box {
+    width: $max_width;
+    height: 400px;
+    background: url("../img/footer/banner.jpg") no-repeat;
+    .map_title {
+      width: $content_width;
+      margin: 100px auto;
+      h3 {
+        font-size: 36px;
+        color: white;
+        margin: 110px 0px 20px;
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 60%;
+          height: 2px;
+          background-color: white;
+          top: -20px;
+          left: 0;
+        }
+      }
+      h4 {
+        margin: 20px 0px;
+        font-size: 28px;
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  } // map_box end
+  .footer_menu {
+    width: $max_width;
+    height: 30px;
+    background-color: #4f4f4f;
+    ul {
+      width: $content_width;
+      margin: 0 auto;
+      line-height: 30px;
+      li {
+        float: left;
+        width: 150px;
+        position: relative;
+        a {
+          color: white;
+          font-size: 12px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 50%;
+          right: 18%;
+          bottom: 22%;
+          background-color: white;
+        }
+      }
+      li:last-of-type {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  } // footer_menu end
+  .copyright {
+    width: $max_width;
+    height: 110px;
+    background-color: #191919;
+    display: inline-block;
+    color: white;
+    margin: -1px 0px 0px;
+    .copyright_text {
+      width: $content_width;
+      margin: 0 auto;
+      text-align: left;
+      h4 {
+        margin: 15px 0px;
+        font-size: 14px;
+      }
+      .left_text {
+        width: 50%;
+        float: left;
+        p {
+          font-size: 12px;
+        }
+      }
+      .right_text {
+        float: right;
+        margin-top: -20px;
+        p {
+          font-size: 14px;
+        }
+        img {
+          width: 100px;
+          float: right;
+          margin-right: -15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.footer_container {
+  width: 1920px;
+  display: inline-block;
+}
+
+.footer_container .map_box {
+  width: 1920px;
+  height: 400px;
+  background: url("../img/footer/banner.jpg") no-repeat;
+}
+
+.footer_container .map_box .map_title {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+.footer_container .map_box .map_title h3 {
+  font-size: 36px;
+  color: white;
+  margin: 110px 0px 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer_container .map_box .map_title h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: white;
+  top: -20px;
+  left: 0;
+}
+
+.footer_container .map_box .map_title h4 {
+  margin: 20px 0px;
+  font-size: 28px;
+  color: white;
+}
+
+.footer_container .map_box .map_title p {
+  color: white;
+}
+
+.footer_container .footer_menu {
+  width: 1920px;
+  height: 30px;
+  background-color: #4f4f4f;
+}
+
+.footer_container .footer_menu ul {
+  width: 1200px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.footer_container .footer_menu ul li {
+  float: left;
+  width: 150px;
+  position: relative;
+}
+
+.footer_container .footer_menu ul li a {
+  color: white;
+  font-size: 12px;
+}
+
+.footer_container .footer_menu ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  right: 18%;
+  bottom: 22%;
+  background-color: white;
+}
+
+.footer_container .footer_menu ul li:last-of-type::after {
+  display: none;
+}
+
+.footer_container .copyright {
+  width: 1920px;
+  height: 110px;
+  background-color: #191919;
+  display: inline-block;
+  color: white;
+  margin: -1px 0px 0px;
+}
+
+.footer_container .copyright .copyright_text {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer_container .copyright .copyright_text h4 {
+  margin: 15px 0px;
+  font-size: 14px;
+}
+
+.footer_container .copyright .copyright_text .left_text {
+  width: 50%;
+  float: left;
+}
+
+.footer_container .copyright .copyright_text .left_text p {
+  font-size: 12px;
+}
+
+.footer_container .copyright .copyright_text .right_text {
+  float: right;
+  margin-top: -20px;
+}
+
+.footer_container .copyright .copyright_text .right_text p {
+  font-size: 14px;
+}
+
+.footer_container .copyright .copyright_text .right_text img {
+  width: 100px;
+  float: right;
+  margin-right: -15px;
+}

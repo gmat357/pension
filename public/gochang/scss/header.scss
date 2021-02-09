@@ -1,0 +1,15 @@
+$max_width: 1920px;
+$content_width: 1200px;
+
+.header_container {
+  width: $max_width;
+  margin: 81px auto;
+  display: inline-block;
+  .swiper-container {
+    width: $content_width;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
