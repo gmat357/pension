@@ -1,0 +1,330 @@
+@import "set";
+body {
+  width: 100%;
+}
+nav {
+  z-index: 1000;
+  position: fixed;
+  .nav_wrap {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 130px;
+    background-color: rgba(70, 70, 70, 0.6);
+    .moblie_icon {
+      display: none;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+    .main_logo_h {
+      margin-right: auto;
+      a {
+        display: inline-block;
+        width: 250px;
+        height: 130px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .menu {
+      ul {
+        display: flex;
+        li {
+          padding: 54px 20px;
+          display: inline-block;
+          a {
+            @include navText;
+          }
+        }
+      }
+    }
+    .mobile_menu {
+      display: none;
+      position: absolute;
+      text-align: center;
+      top: 100px;
+      right: -105px;
+      background-color: rgba(70, 70, 70, 0.6);
+      padding: 0px 10px;
+      ul {
+        li {
+          padding: 10px 0px;
+          display: block;
+          a {
+            @include navText;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+article {
+  .slider_wrap {
+    overflow: hidden;
+    .slider {
+      .slider_bg {
+        position: relative;
+        #slider_img {
+          width: 100%;
+          height: 100vh;
+        }
+        .bg_text {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1000;
+          text-align: center;
+          h2 {
+            font-size: 28px;
+            letter-spacing: 13px;
+            padding: 20px 0;
+          }
+          p {
+            font-size: 18px;
+            letter-spacing: 3px;
+          }
+          h2,
+          p {
+            font-family: "Noto Sans KR", sans-serif;
+            text-shadow: 0px 0px 8px #222222;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  } //slider_wrap
+  .index_area {
+    .bg_div {
+      height: 100vh;
+      background-image: url(../img/Beach.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      text-align: center;
+      h2 {
+        margin: auto;
+        width: 50%;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 27px;
+        font-weight: 500;
+        text-shadow: 0px 0px 3px #ffffff;
+        color: #333333;
+      }
+      h2:nth-of-type(1) {
+        padding: 30px 0px 10px;
+      }
+      h2:nth-of-type(2) {
+        padding: 0px 0px 10px;
+      }
+      p {
+        font-size: 18px;
+        color: #333333;
+        font-family: "Dancing Script", cursive;
+        text-shadow: 0px 0px 5px #ffffff;
+      }
+    }
+  } //index_area
+  .video_area {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    text-align: center;
+    background-image: url(../img/hotel2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .left_text_box {
+      width: 40%;
+      text-align: right;
+      margin: auto;
+      margin-right: 0;
+      h3 {
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 29px;
+        font-weight: 400;
+        text-shadow: 0px 0px 3px #ffffff;
+        color: #ffffff;
+        letter-spacing: 6px;
+        margin: 20px 0px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Noto Sans KR", sans-serif;
+        text-shadow: 0px 0px 3px #ffffff;
+        color: #ffffff;
+        letter-spacing: 2px;
+        line-height: 1.8;
+      }
+    }
+    .video_box {
+      width: 40%;
+      margin: auto;
+      video {
+        width: 100%;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+        box-shadow: 0px 0px 10px #ffde71;
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  background-color: #333333;
+  .foot_logo_area {
+    width: 250px;
+    height: 130px;
+    margin-right: auto;
+    img {
+      width: 100%;
+    }
+  }
+  .foot_text_area {
+    margin: auto;
+    margin-right: 10px;
+    p {
+      text-align: right;
+      font-size: 13px;
+      font-weight: 400;
+      font-family: "Noto Sans KR", sans-serif;
+      color: #ffffff;
+    }
+  }
+}
+
+@include tablet {
+  nav {
+    .nav_wrap {
+      display: block;
+      text-align: center;
+      height: 200px;
+      .main_logo_h {
+        margin-right: auto;
+        a {
+          display: inline-block;
+          width: 250px;
+          height: 130px;
+        }
+      }
+      .menu {
+        text-align: center;
+        ul {
+          display: inline-block;
+          li {
+            padding: 0px 20px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  nav {
+    .nav_wrap {
+      display: inline-block;
+      text-align: center;
+      height: 100px;
+      .moblie_icon {
+        display: block;
+      }
+      .main_logo_h {
+        margin-right: auto;
+        a {
+          display: inline-block;
+          width: 200px;
+          height: 100px;
+        }
+      }
+      .menu {
+        display: none;
+      }
+
+      .mobile_menu {
+        display: block;
+      }
+    }
+  }
+  article {
+    .slider_wrap {
+      overflow: hidden;
+      .slider {
+        .slider_bg {
+          position: relative;
+          #slider_img {
+            height: 60vh;
+          }
+          .bg_text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            text-align: center;
+            h2 {
+              font-size: 28px;
+              letter-spacing: 13px;
+              padding: 20px 0;
+            }
+            p {
+              font-size: 18px;
+              letter-spacing: 3px;
+            }
+            h2,
+            p {
+              font-family: "Noto Sans KR", sans-serif;
+              text-shadow: 0px 0px 8px #222222;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    } //slider_wrap
+    .index_area {
+      .bg_div {
+        height: 50vh;
+        text-align: center;
+        h2 {
+          width: 90%;
+        }
+      }
+    } //index_area
+    .video_area {
+      height: auto;
+      display: inline-block;
+      text-align: center;
+      .left_text_box {
+        width: 90%;
+        text-align: unset;
+        margin: auto;
+        p {
+          font-size: 16px;
+          letter-spacing: 1.2px;
+        }
+      }
+      .video_box {
+        width: 90%;
+        margin: 20px auto;
+      }
+    }
+  }
+  footer {
+    .foot_logo_area {
+      margin: auto;
+    }
+    .foot_text_area {
+      display: none;
+    }
+  }
+}

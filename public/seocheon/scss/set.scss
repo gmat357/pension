@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+@mixin navText {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+@mixin h2 {
+    font-family: "notosans", sans-serif;
+}
+
+$tablet: 1230px;
+$mobile: 768px;
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}

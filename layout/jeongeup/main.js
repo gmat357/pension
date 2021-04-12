@@ -33,11 +33,10 @@ exports.content = ()=>{
         <div class="room">
             <div class="room_left">
                 <div class="room_text">
-
                     <h6>rooms</h6>
                     <h3></h3>
                     <p>THEME INTERIOR ROOMS</p>
-                    <a href="/room">객실보기</a>
+                    <a href="/jeongeup/room">객실보기</a>
                     <div class="room_btn_box">
                         <span class="left">
                             <img src="../public/jeongeup/img/main/left_arrow.png" alt="왼쪽 화살표">

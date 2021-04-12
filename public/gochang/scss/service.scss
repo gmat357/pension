@@ -1,0 +1,78 @@
+$max_width: 1920px;
+$content_width: 1200px;
+
+.content_container {
+  width: $max_width;
+  margin: 80px auto 0px;
+  display: inline-block;
+  .room_box {
+    width: $content_width;
+    margin: 50px auto;
+    .top_text {
+      width: $content_width;
+      height: 40px;
+      text-align: left;
+      border-bottom: 1px solid #cccccc;
+      margin: 30px 0px;
+      h4 {
+        font-size: 20px;
+        margin: 20px;
+      }
+    }
+    ul {
+      width: 100%;
+      text-align: center;
+      li {
+        width: 47%;
+        height: 500px;
+        float: left;
+        margin: 15px;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          left: 5%;
+          bottom: 0;
+        }
+        img {
+          width: 100%;
+          margin: 0px 30px;
+          transition-duration: 0.3s;
+        }
+        h4 {
+          margin: 30px;
+          font-size: 18px;
+          color: black;
+        }
+        p {
+          margin: 30px;
+          color: #999999;
+          font-size: 14px;
+          b {
+            font-size: 14px;
+            color: #444444;
+          }
+        }
+        &:hover {
+          &::after {
+            transition-duration: 0.5s;
+            width: 90%;
+            background-color: #444444;
+          }
+          img {
+            transition-duration: 1s;
+            transform: scale(1.2);
+          }
+        }
+      }
+      li:nth-of-type(even) {
+        margin: 70px 15px;
+      }
+    }
+  } // room_box end
+}

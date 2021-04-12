@@ -36,6 +36,8 @@ const gochangRouter = require('./routers/gochang/index');
 
 const indexRouter = require('./routers/index');
 
+const seocheonRouter = require('./routers/seocheon/index');
+
 
 app.use('/public',express.static(path.join(__dirname,"public")));
 app.use('/public/iksan',express.static(path.join(__dirname,"public")));
@@ -83,6 +85,14 @@ app.get('/jeongeup/:query',jeongeupRouter);
 
 app.get('/gochang',gochangRouter);
 app.get('/gochang/:query',gochangRouter);
+
+app.get('/seocheon',seocheonRouter);
+app.get('/seocheon/about',seocheonRouter);
+app.get('/seocheon/room',seocheonRouter);
+app.get('/seocheon/room_sub',seocheonRouter);
+app.get('/seocheon/facilities',seocheonRouter);
+app.get('/seocheon/service',seocheonRouter);
+app.get('/seocheon/reservation',seocheonRouter);
 
 app.listen(port,()=>{console.log(port+"server")});
 

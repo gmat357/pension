@@ -1,0 +1,257 @@
+@import "set";
+body {
+    width: 100%;
+}
+nav {
+    z-index: 1000;
+    position: fixed;
+    .nav_wrap {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 130px;
+        background-color: rgba(70, 70, 70, 0.6);
+        .moblie_icon {
+            display: none;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+        .main_logo_h {
+            margin-right: auto;
+            a {
+                display: inline-block;
+                width: 250px;
+                height: 130px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .menu {
+            ul {
+                display: flex;
+                li {
+                    padding: 54px 20px;
+                    display: inline-block;
+                    a {
+                        @include navText;
+                    }
+                }
+            }
+        }
+        .mobile_menu {
+            display: none;
+            position: absolute;
+            text-align: center;
+            top: 100px;
+            right: -105px;
+            background-color: rgba(70, 70, 70, 0.6);
+            padding: 0px 10px;
+            ul {
+                li {
+                    padding: 10px 0px;
+                    display: block;
+                    a {
+                        @include navText;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+article {
+    .slider_wrap {
+        overflow: hidden;
+        .slider {
+            .slider_bg {
+                position: relative;
+                #slider_img {
+                    width: 100%;
+                    height: 100vh;
+                }
+                .bg_text {
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1000;
+                    text-align: center;
+                    h2 {
+                        font-size: 18px;
+                        letter-spacing: 3px;
+                        padding: 10px 0;
+                        font-weight: 300;
+                    }
+                    p {
+                        font-size: 32px;
+                        letter-spacing: 15px;
+                    }
+                    h2,
+                    p {
+                        font-family: "Noto Sans KR", sans-serif;
+                        text-shadow: 0px 0px 8px #222222;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    } //slider_wrap
+    .index_area {
+        .bg_div {
+            height: auto;
+            padding: 60px 0px;
+            background-image: url(../img/abt_bg.jpg);
+            background-repeat: no-repeat;
+            text-align: center;
+            h2 {
+                margin: auto;
+                width: 50%;
+                font-family: "Noto Sans KR", sans-serif;
+                font-weight: 500;
+            }
+            h2:nth-of-type(1) {
+                font-size: 22px;
+                letter-spacing: -1.5px;
+            }
+            h2:nth-of-type(2) {
+                font-size: 35px;
+                letter-spacing: 3px;
+                padding: 0px 0px 10px;
+            }
+            .stick {
+                width: 5px;
+                height: 80px;
+                background-color: #999999;
+                margin: auto;
+                position: relative;
+                border-radius: 5px;
+                .stick_sub {
+                    width: 100%;
+                    height: 20px;
+                    background-color: #222222;
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 5px;
+                }
+            }
+            p {
+                font-size: 18px;
+                font-family: "Noto Sans KR", sans-serif;
+                letter-spacing: 3px;
+                margin: 40px 0px 0px;
+                font-weight: 400;
+                color: #222222;
+                b {
+                    color: #222222;
+                }
+            }
+        }
+    } //index_area
+    .room_inpo {
+        width: 100%;
+        padding: 60px 0px;
+        text-align: center;
+        background-color: #f7f7f7;
+        margin: auto;
+        .room_view {
+            h2 {
+                font-size: 35px;
+                font-family: "Noto Sans KR", sans-serif;
+                font-weight: 500;
+                margin-top: 40px;
+            }
+            h4 {
+                font-size: 20px;
+                font-family: "Noto Sans KR", sans-serif;
+                font-weight: 400;
+                color: #999999;
+                margin-bottom: 20px;
+            }
+            .room_img_div {
+                a {
+                    width: 38%;
+                    display: inline-block;
+                    overflow: hidden;
+                    img {
+                        margin: 5px;
+                        width: 100%;
+                        height: 400px;
+                        transition-duration: 0.5s;
+                    }
+                    &:hover {
+                        img {
+                            opacity: 0.4;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    background-color: #333333;
+    .foot_logo_area {
+        width: 250px;
+        height: 130px;
+        margin-right: auto;
+        img {
+            width: 250px;
+            height: 130px;
+        }
+    }
+    .foot_text_area {
+        margin: auto;
+        margin-right: 10px;
+        p {
+            text-align: right;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: "Noto Sans KR", sans-serif;
+            color: #ffffff;
+        }
+    }
+}
+@include mobile {
+    nav {
+        .nav_wrap {
+            display: inline-block;
+            text-align: center;
+            height: 100px;
+            .moblie_icon {
+                display: block;
+            }
+            .main_logo_h {
+                margin-right: auto;
+                a {
+                    display: inline-block;
+                    width: 200px;
+                    height: 100px;
+                }
+            }
+            .menu {
+                display: none;
+            }
+
+            .mobile_menu {
+                display: block;
+            }
+        }
+    }
+    footer {
+        .foot_logo_area {
+            margin: auto;
+        }
+        .foot_text_area {
+            display: none;
+        }
+    }
+}

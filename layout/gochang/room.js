@@ -6,7 +6,7 @@ exports.content = ()=>{
             <h4>Room</h4>
         </div>
             <ul>
-                <a href="/gochang/room">
+                <a href="/gochang/room_sub">
                     <li>
                         <img src="../public/gochang/img/main/room_1.jpg" alt="방사진">
                         <h4>A-TYPE</h4>
