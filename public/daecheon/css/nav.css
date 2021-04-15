@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.nav_wrap {
+  z-index: 1000;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/ft_bg.jpg);
+  width: 100%;
+  height: 130px;
+  padding-bottom: 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.nav_wrap a {
+  margin-right: auto;
+}
+
+.nav_wrap a img {
+  width: 250px;
+  height: 130px;
+}
+
+.nav_wrap table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.nav_wrap table thead tr th {
+  padding: 54px 32px;
+}
+
+.nav_wrap table thead tr th a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav_wrap table tbody {
+  display: none;
+}
+
+.nav_wrap table tbody tr td {
+  padding: 5px;
+}
+
+.nav_wrap table tbody tr td a {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.nav_wrap:hover {
+  height: 250px;
+}
+
+.nav_wrap:hover tbody tr td a {
+  font-weight: 400;
+}
+
+.nav_wrap:hover tbody tr td a:hover {
+  color: #00ffff;
+}
+
+@media (max-width: 1230px) {
+  .nav_wrap table thead tr th {
+    padding: 54px 0.9em;
+  }
+}
+
+@media (max-width: 890px) {
+  .nav_wrap {
+    display: block;
+    text-align: center;
+  }
+  .nav_wrap a {
+    height: 130px;
+  }
+  .nav_wrap table {
+    width: 100%;
+  }
+  .nav_wrap table thead {
+    display: none;
+  }
+  .nav_wrap table thead tr th {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../public/daecheon/css/set.css">
+    <link rel="stylesheet" href="../public/daecheon/css/nav.css">
+    <link rel="stylesheet" href="../public/daecheon/css/footer.css">
+    <link rel="stylesheet" href="../public/daecheon/css/service.css">
+    <title>대천펜션</title>
+</head>
+
+<body>
+    <header class="header_container"></header>
+    <nav class="nav_container"></nav>
+    <article class="article_container">
+        <div class="room_wrap">
+            <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/slider_bg.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/pool1.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room2.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room1.jpg" alt="">
+                </div>
+            </div>
+            <div class="room_reservation">
+                <h2>service</h2>
+                <div class="room_info">
+                    <div class="block_info">
+                        <h5>서비스</h5>
+                        <span>• 커피 머신 제공</span>
+                        <p>1층 로비 카페에서 커피를 무제한으로 제공합니다. <br>
+                        </p>
+                    </div>
+                    <div class="hidden_info">
+                        <span>• 온수</span>
+                        <p>사계절 언제나 실•내외 수영장에 온수를 제공합니다.
+                        </p><br><br>
+                        <span>• 숯 / 그릴</span>
+                        <p>차콜 숯, 일회용 불판, 웨버 바비큐 등 준비해 드립니다.
+                            <br>
+                            <b>2인 기준 : 20,000원, 3인 이상 : 30,000원</b>
+                        </p><br><br><br>
+                        <span>• 침구류</span>
+                        <p>매일 관리하는 호텔식 침구류로 고객님들의 편안한 휴식을 책임지겠습니다.
+
+                            청결하고 깨끗한 침구에서 즐거운 여행 시작하세요.
+
+                            (침구는 1일 1사용을 원칙으로 하고 있습니다)</p><br><br>
+                        <span>• 와이파이</span>
+
+                        <p>펜션에 설치된 TV의 다양한 채널을 통해 무료한시간 없이 즐겁게 저녁시간을 즐겨보세요.
+
+                            Wi-Fi를 이용해 스마트폰을 편리하게 이용하실 수 있습니다.
+
+                        </p>
+                    </div>
+                    <div class="look_box">
+                        <p class="more_btn"><img src="../public/daecheon/img/i.png" alt=""> 더보기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="footer_container"></footer>
+    <script>
+        $(function () {
+            $(".nav_container").load('../public/daecheon/layout/nav.html');
+            $(".footer_container").load('../public/daecheon/layout/footer.html');
+        });
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/daecheon/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true
+        });
+
+        var more = $('.more_btn');
+        var hiddenDiv2 = $('.room_info');
+        $(function () {
+            more.on("click", function () {
+                hiddenDiv2.css("height") == "200px" ? slide(true) : slide(false);
+            });
+            function slide() {
+                if ($('.nav_wrap').width() < "890") {
+                    var a = arguments[0] ? "800" : "200";
+                }
+                else {
+                    var a = arguments[0] ? "500" : "200";
+                }
+                hiddenDiv2.css({
+                    "height": a + "px",
+                    "transitionDuration": "1.5s"
+                })
+            };
+        });
+
+    </script>
+</body>
+
+</html>

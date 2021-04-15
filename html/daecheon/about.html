@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../public/daecheon/css/set.css">
+    <link rel="stylesheet" href="../public/daecheon/css/nav.css">
+    <link rel="stylesheet" href="../public/daecheon/css/footer.css">
+    <link rel="stylesheet" href="../public/daecheon/css/about.css">
+    <title>대천펜션</title>
+</head>
+
+<body>
+    <header class="header_container"></header>
+    <nav class="nav_container"></nav>
+    <article class="article_container">
+        <div class="main_wrap">
+            <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/slider_bg.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/pool1.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room2.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room1.jpg" alt="">
+                </div>
+            </div>
+            <div class="about_slogun">
+                <h2>premium pension & pool villa</h2>
+                <h4>프리미엄 팬션 & 풀빌라</h4>
+                <p>
+                    저희 펜션은 애견을 사랑하는 사람들이 반려견과 함께 편안한 휴식을 보낼 수 있는 장소를 제공합니다. <br>
+                    자신의 개를 사랑하듯이 다른 사람의 개도 애정어린 시선으로 보아 주시길 바라며 사교성이 없는 반려견과 반려인은 사양합니다. <br>
+                    피치못하게 맹견과 공격성있는 개는 받지않습니다. <br>
+
+                    견종에 따라 진돗개, 풍산개, 차우차우, 핏불테리어, 도베르만 등은 입실에 제한이 있을 수 있습니다. <br>
+
+                    위의 견종들은 예약 전 꼭 전화 문의 해 주세요. <br>
+                    미연의 사고를 방지하기 위한 조치이오니 양해해 주시기 바랍니다. <br>
+                </p>
+            </div>
+            <div class="about_img_area">
+                <div class="double_img">
+                    <img src="../public/daecheon/img/about_img.jpg" alt="1" class="long_img">
+                    <img src="../public/daecheon/img/room1.jpg" alt="2" class="haif_img">
+                </div>
+                <div class="triple_img">
+                    <img src="../public/daecheon/img/about_img2.jpg" alt="3" class="haif_img">
+                    <img src="../public/daecheon/img/about_img3.jpg" alt="4" class="haif_img">
+                    <img src="../public/daecheon/img/logo2.png" alt="5" class="logo">
+                </div>
+            </div>
+            <img src="../public/daecheon/img/about_img3.jpg" alt="" style="width: 100%; height: 100vh;">
+            <div class="map_area">
+
+                <h2>map & location</h2>
+                <h4>프리미엄 팬션 & 풀빌라로 오시는 길</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12917.681479913812!2d126.98206273957672!3d35.961146850308246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357015713913bbb5%3A0xedc6644f3f1c69cc!2z7KCE652867aB64-EIOydteyCsOyLnCDrtoDshqHroZw!5e0!3m2!1sko!2skr!4v1618281599496!5m2!1sko!2skr"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map_text">
+                </div>
+            </div>
+
+
+
+            <div class="last_img">
+                <img src="../public/daecheon/img/pool1.jpg" alt="">
+                <h4>premium pension & pool villa</h4>
+            </div>
+        </div>
+    </article>
+    <footer class="footer_container"></footer>
+    <script>
+        $(function () {
+            $(".nav_container").load('../public/daecheon/layout/nav.html');
+            $(".footer_container").load('../public/daecheon/layout/footer.html');
+        });
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/daecheon/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true
+        });
+    </script>
+</body>
+
+</html>

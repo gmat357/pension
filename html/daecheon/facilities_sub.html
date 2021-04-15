@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../public/daecheon/css/set.css">
+    <link rel="stylesheet" href="../public/daecheon/css/nav.css">
+    <link rel="stylesheet" href="../public/daecheon/css/footer.css">
+    <link rel="stylesheet" href="../public/daecheon/css/facilities_sub.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header_container"></header>
+    <nav class="nav_container"></nav>
+    <article class="article_container">
+        <div class="room_wrap">
+            <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/slider_bg.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/pool1.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room2.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room1.jpg" alt="">1
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/slider_bg.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/pool1.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room2.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room1.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </article>
+    <footer class="footer_container"></footer>
+    <script>
+        $(function () {
+            $(".nav_container").load('../public/daecheon/layout/nav.html');
+            $(".footer_container").load('../public/daecheon/layout/footer.html');
+        });
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/daecheon/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true
+        });
+    </script>
+</body>
+
+</html>

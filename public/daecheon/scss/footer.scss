@@ -1,0 +1,35 @@
+@import "set";
+footer {
+    display: flex;
+    background: url(../img/ft_bg.jpg);
+    .foot_logo_area {
+        width: 250px;
+        height: 130px;
+        margin-right: auto;
+        img {
+            width: 250px;
+            height: 130px;
+        }
+    }
+    .foot_text_area {
+        margin: auto;
+        margin-right: 10px;
+        p {
+            text-align: right;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: "Noto Sans KR", sans-serif;
+            color: #ffffff;
+        }
+    }
+}
+@include tablet {
+}
+@include mobile {
+    .foot_logo_area {
+        margin: auto;
+    }
+    .foot_text_area {
+        display: none;
+    }
+}

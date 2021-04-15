@@ -1,0 +1,349 @@
+@import "set";
+article {
+    .room_wrap {
+        .slider {
+            .slider_bg {
+                img {
+                    width: 100%;
+                    height: 100vh;
+                }
+            }
+            .slick-next {
+                right: 75px;
+            }
+        }
+        .room_reservation {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 100px 0px;
+            h2 {
+                color: #000155;
+                font-size: 38px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+            }
+            h4 {
+                color: #777777;
+                padding: 30px 0px;
+                font-size: 22px;
+                font-weight: 400;
+            }
+            p {
+                color: #777777;
+                font-size: 14px;
+                line-height: 1.6em;
+                text-align: left;
+            }
+            table {
+                width: 100%;
+                height: 180px;
+                margin: auto auto 40px auto;
+                border-collapse: collapse;
+                border-bottom: 1px solid #bbb;
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                }
+                thead {
+                    border-top: 1px solid #000;
+                    border-bottom: 1px solid #000;
+                }
+                td {
+                    border-left: 1px solid #bbb;
+                    position: relative;
+                    .bottom_text {
+                        position: absolute;
+                        bottom: 0%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                th {
+                    background-color: #f8f8f8;
+                }
+                td,
+                th {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            } //table
+            .reservation_btn {
+                text-transform: uppercase;
+                border: #d62f29 1px solid;
+                color: #d62f29;
+                padding: 10px 40px;
+                transition-duration: 0.5s;
+                font-weight: 600;
+                &:hover {
+                    color: #fff;
+                    background-color: #d62f29;
+                    transition-duration: 0.5s;
+                }
+            }
+            .room_info {
+                margin: 40px 0;
+                position: relative;
+                height: 200px;
+                padding: 20px;
+                background-color: #effff0;
+                overflow: hidden;
+                .block_info {
+                    text-align: left;
+                    h5 {
+                        font-size: 16px;
+                        padding: 0 0 30px 0;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 120px;
+                        color: #555;
+                        font-size: 14px;
+                    }
+                    p {
+                        display: inline-block;
+                        width: calc(100% - 140px);
+                        position: relative;
+                        b {
+                            position: absolute;
+                            color: #d62f29;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .look_box {
+                    position: absolute;
+                    width: 100%;
+                    height: 80px;
+                    background-color: #effff0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 15;
+                    .more_btn {
+                        display: inline-block;
+                        margin-top: 13px;
+                        background-color: #d62f29;
+                        color: #fff;
+                        padding: 15px 50px;
+                        border-radius: 25px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        position: relative;
+                        transition-duration: 0.5s;
+                        cursor: pointer;
+                        img {
+                            margin-right: 10px;
+                        }
+                        &:hover {
+                            transition-duration: 0.5s;
+                            background-color: #00a075;
+                        }
+                    }
+                }
+                .hidden_info {
+                    display: block;
+                    text-align: left;
+                    margin: 60px 0;
+                    h5 {
+                        font-size: 16px;
+                        padding: 30px 0;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 120px;
+                        color: #555;
+                        font-size: 14px;
+                    }
+                    p {
+                        display: inline-block;
+                        width: calc(100% - 140px);
+                        position: relative;
+                        b {
+                            position: absolute;
+                            color: #d62f29;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include tablet {
+}
+@include mobile {
+    article {
+        .room_wrap {
+            .slider {
+                .slider_bg {
+                    img {
+                        width: 100%;
+                        height: 100vh;
+                    }
+                }
+                .slick-next {
+                    right: 75px;
+                }
+            }
+            .room_reservation {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 100px 0px;
+                h2 {
+                    color: #000155;
+                    font-size: 38px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                }
+                h4 {
+                    color: #777777;
+                    padding: 30px 0px;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                p {
+                    color: #777777;
+                    font-size: 14px;
+                    line-height: 1.6em;
+                    text-align: left;
+                }
+                table {
+                    width: 100%;
+                    height: 180px;
+                    margin: auto auto 40px auto;
+                    border-collapse: collapse;
+                    border-bottom: 1px solid #bbb;
+                    p {
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                    thead {
+                        border-top: 1px solid #000;
+                        border-bottom: 1px solid #000;
+                    }
+                    td {
+                        border-left: 1px solid #bbb;
+                        position: relative;
+                        .bottom_text {
+                            display: none;
+                            position: absolute;
+                            bottom: 0%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    th {
+                        background-color: #f8f8f8;
+                    }
+                    td,
+                    th {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                } //table
+                .reservation_btn {
+                    text-transform: uppercase;
+                    border: #d62f29 1px solid;
+                    color: #d62f29;
+                    padding: 10px 40px;
+                    transition-duration: 0.5s;
+                    font-weight: 600;
+                    &:hover {
+                        color: #fff;
+                        background-color: #d62f29;
+                        transition-duration: 0.5s;
+                    }
+                }
+                .room_info {
+                    margin: 40px 0;
+                    position: relative;
+                    height: 200px;
+                    padding: 20px;
+                    background-color: #effff0;
+                    overflow: hidden;
+                    .block_info {
+                        text-align: left;
+                        h5 {
+                            font-size: 16px;
+                            padding: 0 0 30px 0;
+                        }
+                        span {
+                            display: inline-block;
+                            width: 120px;
+                            color: #555;
+                            font-size: 14px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: calc(100% - 140px);
+                            position: relative;
+                            b {
+                                position: absolute;
+                                color: #d62f29;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .look_box {
+                        position: absolute;
+                        width: 100%;
+                        height: 80px;
+                        background-color: #effff0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 15;
+                        .more_btn {
+                            display: inline-block;
+                            margin-top: 13px;
+                            background-color: #d62f29;
+                            color: #fff;
+                            padding: 15px 50px;
+                            border-radius: 25px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            position: relative;
+                            transition-duration: 0.5s;
+                            cursor: pointer;
+                            img {
+                                margin-right: 10px;
+                            }
+                            &:hover {
+                                transition-duration: 0.5s;
+                                background-color: #00a075;
+                            }
+                        }
+                    }
+                    .hidden_info {
+                        display: block;
+                        text-align: left;
+                        margin: 60px 0;
+                        h5 {
+                            font-size: 16px;
+                            padding: 30px 0;
+                        }
+                        span {
+                            display: inline-block;
+                            width: 120px;
+                            color: #555;
+                            font-size: 14px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 100%;
+                            position: relative;
+                            b {
+                                display: none;
+                                position: absolute;
+                                color: #d62f29;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

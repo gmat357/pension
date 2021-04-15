@@ -1,0 +1,52 @@
+<div class="nav_wrap">
+    <a href="/daecheon"><img src="../public/daecheon/img/logo.png" alt=""></a>
+    <table class="menu_box">
+        <thead>
+            <tr>
+                <th><a href="/daecheon/about">about</a></th>
+                <th><a href="/daecheon/room">room</a></th>
+                <th><a href="/daecheon/facilities">facilities</a></th>
+                <th><a href="/daecheon/service">service</a></th>
+                <th><a href="#">reservation</a></th>
+                <th><a href="/daecheon/community">community</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="/daecheon/about">sub contents</a></td>
+                <td><a href="/daecheon/room_sub">sub contents</a></td>
+                <td><a href="/daecheon/facilities_sub">sub contents</a></td>
+                <td><a href="/daecheon/service">sub contents</a></td>
+                <td><a href="#">sub contents</a></td>
+                <td><a href="/daecheon/community">sub contents</a></td>
+            </tr>
+            <tr>
+                <td><a href="/daecheon/about">sub contents</a></td>
+                <td><a href="/daecheon/room_sub">sub contents</a></td>
+                <td><a href="/daecheon/facilities_sub">sub contents</a></td>
+                <td><a href="/daecheon/service">sub contents</a></td>
+                <td><a href="#">sub contents</a></td>
+                <td><a href="/daecheon/community">sub contents</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    $(function () {
+        var nav = $(".nav_wrap");
+        nav.on("mouseenter", function () {
+            nav.children(".menu_box").children('tbody').fadeIn(1000);
+            nav.children(".menu_box").children('tbody').clearQueue();
+            if ($('.nav_wrap').width() < "890") {
+                nav.children(".menu_box").children('thead').fadeIn(1000);
+                nav.children(".menu_box").children('thead').clearQueue();
+            }
+        });
+        nav.on("mouseleave", function () {
+            if ($('.nav_wrap').width() < "890") {
+                nav.children(".menu_box").children('thead').fadeOut(200);
+            }
+            nav.children(".menu_box").children('tbody').fadeOut(200);
+        });
+    });
+</script>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../public/daecheon/css/set.css">
+    <link rel="stylesheet" href="../public/daecheon/css/nav.css">
+    <link rel="stylesheet" href="../public/daecheon/css/footer.css">
+    <link rel="stylesheet" href="../public/daecheon/css/room_sub.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header_container"></header>
+    <nav class="nav_container"></nav>
+    <article class="article_container">
+        <div class="room_wrap">
+            <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/slider_bg.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/pool1.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room2.jpg" alt="">
+                </div>
+                <div class="slider_bg">
+                    <img src="../public/daecheon/img/room1.jpg" alt="">
+                </div>
+            </div>
+            <div class="room_reservation">
+                <h2>room number & room name</h2>
+                <h4>00월 00일 ~ 00월 00일</h4>
+                <p> * 예시 이미지입니다.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>객실<br>(기준.최대)</th>
+                            <td>월 <br> 01/01 <br>
+                                <p>비수기/주중</p>
+                            </td>
+                            <td>화 <br> 01/02 <br>
+                                <p>비수기/주중</p>
+                            </td>
+                            <td>수 <br> 01/03 <br>
+                                <p>비수기/주중</p>
+                            </td>
+                            <td>목 <br> 01/04 <br>
+                                <p>비수기/주중</p>
+                            </td>
+                            <td>금 <br> 01/05 <br>
+                                <p>비수기/주중</p>
+                            </td>
+                            <td>토 <br> 01/06 <br>
+                                <p>비수기/주중</p>
+                            </td>
+                            <td>일 <br> 01/07 <br>
+                                <p>비수기/주중</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                101<br>
+                                <p>2명/2명</p>
+                            </th>
+                            <td>
+                                <p>예약완료</p>
+                            </td>
+                            <td>
+                                <p>예약완료</p>
+                            </td>
+                            <td>
+                                <p>예약완료</p>
+                            </td>
+                            <td>
+                                <p>예약완료</p>
+                            </td>
+                            <td>
+                                <p>예약완료</p>
+                            </td>
+                            <td>
+                                <b>190,000원</b>
+                                <p class="bottom_text">예약가능</p>
+                            </td>
+                            <td>
+                                <p>예약완료</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="reservation_btn">실시간 예약하기</a>
+                <div class="room_info">
+                    <div class="block_info">
+                        <h5>객실정보</h5>
+                        <span>• 기준인원</span>
+                        <p>2명 / 최대인원 : 2명 <br>
+                            <b> 초과금액 : 14세 이상 30,000원 8세 ~ 13세 20,000원 4세 ~ 7세 10,000원</b>
+                        </p>
+                    </div>
+                    <div class="hidden_info">
+                        <span>• 유형/상태</span>
+                        <p>원룸(침대), 화장실 / 커플전용
+                        </p>
+                        <span>• 특이사항</span>
+                        <p>개별테라스+바비큐
+                        </p>
+                        <h5>구비시설</h5>
+                        <p>TV, 침대, 소파, 에어컨, 냉장고, 아일랜드식탁, 전자렌지, 주방기구일체, 식기류일체, 정수기, 샴푸, 린스, 바디워시, 비누, 수건, 애견샴푸, 애견용 수건,
+                            물티슈, 일회용수세미, 일회용 행주, 배변패드, 요청 시 애견 식기&애견계단 대여(한정수량으로 선착순 대여), Wi-Fi</p>
+                        <h5>구비시설</h5>
+                        <span>• 주중</span>
+                        <p>일요일~목요일 <br>
+                            <b> 금요일,공휴일 전날 : 요금 별도 표시</b>
+                        </p>
+                        <span>• 주말</span>
+                        <p><br>토요일,공휴일 전날 <br>
+                        </p>
+                    </div>
+                    <div class="look_box">
+                        <p class="more_btn"><img src="../public/daecheon/img/i.png" alt=""> 더보기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="footer_container"></footer>
+    <script>
+        $(function () {
+            $(".nav_container").load('../public/daecheon/layout/nav.html');
+            $(".footer_container").load('../public/daecheon/layout/footer.html');
+        });
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/daecheon/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true
+        });
+
+        var more = $('.more_btn');
+        var hiddenDiv2 = $('.room_info');
+        $(function () {
+            more.on("click", function () {
+                hiddenDiv2.css("height") == "200px" ? slide(true) : slide(false);
+            });
+            function slide() {
+                if ($('.room_wrap').width() < "890") {
+                    var a = arguments[0] ? "800" : "200";
+                }
+                else {
+                    var a = arguments[0] ? "600" : "200";
+                }
+                hiddenDiv2.css({
+                    "height": a + "px",
+                    "transitionDuration": "1.5s"
+                })
+            };
+        });
+
+    </script>
+</body>
+
+</html>

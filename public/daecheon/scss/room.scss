@@ -1,0 +1,189 @@
+@import "set";
+article {
+    .last_img {
+        height: 50vh;
+        background: url(../img/about_img2.jpg);
+        background-color: rgba(0.4, 0.4, 0.4, 0.6);
+        margin-top: 0;
+        position: relative;
+        .tone_down {
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            width: 100%;
+            height: 50vh;
+        }
+        h4 {
+            position: absolute;
+            text-transform: uppercase;
+            top: 60%;
+            left: 50%;
+            color: #f8f8f8;
+            text-shadow: 0px 0px 6px #000;
+            letter-spacing: 8px;
+            font-size: 36px;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .view_rooms {
+        text-align: center;
+        padding: 120px 0px;
+        width: 85%;
+        margin: 0 auto;
+        h4 {
+            color: #000155;
+            text-transform: uppercase;
+            font-size: 42px;
+            font-weight: 500;
+        }
+        .view_p {
+            padding: 20px;
+            color: #555555;
+            font-size: 18px;
+            font-weight: 560;
+        }
+        .room_list {
+            width: 95%;
+            margin: 0 auto;
+            ul {
+                width: 100%;
+                margin: 0 auto;
+                li {
+                    display: inline-block;
+                    width: 30%;
+                    margin: 10px 0.5%;
+                    a {
+                        text-align: center;
+                        img {
+                            width: 100%;
+                            margin: auto;
+                            transition-duration: 0.5s;
+                        }
+                        h5 {
+                            text-transform: uppercase;
+                            font-size: 18px;
+                            margin: 10px 0px;
+                        }
+                        p {
+                            font-size: 16px;
+                            color: #555555;
+                            font-weight: 600;
+                            padding: 10px 0px;
+                        }
+                        .view {
+                            text-transform: uppercase;
+                            color: #d62f29;
+                            padding: 5px 20px;
+                            transition-duration: 0.5s;
+                        }
+                        &:hover {
+                            img {
+                                opacity: 0.4;
+                                transition-duration: 0.5s;
+                            }
+                            .view {
+                                transition-duration: 0.5s;
+                                letter-spacing: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include tablet {
+}
+@include mobile {
+    article {
+        .last_img {
+            height: 50vh;
+            background: url(../img/about_img2.jpg);
+            background-color: rgba(0.4, 0.4, 0.4, 0.6);
+            margin-top: 0;
+            position: relative;
+            .tone_down {
+                background-color: rgba(0, 0, 0, 0.4);
+                position: absolute;
+                width: 100%;
+                height: 50vh;
+            }
+            h4 {
+                position: absolute;
+                text-transform: uppercase;
+                top: 60%;
+                left: 50%;
+                color: #f8f8f8;
+                text-shadow: 0px 0px 6px #000;
+                letter-spacing: 8px;
+                font-size: 36px;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .view_rooms {
+            text-align: center;
+            padding: 120px 0px;
+            width: 100%;
+            margin: 0 auto;
+            h4 {
+                color: #000155;
+                text-transform: uppercase;
+                font-size: 42px;
+                font-weight: 500;
+            }
+            .view_p {
+                padding: 20px;
+                color: #555555;
+                font-size: 18px;
+                font-weight: 560;
+            }
+            .room_list {
+                width: 100%;
+                margin: 0 auto;
+                ul {
+                    width: 90%;
+                    margin: 0 auto;
+                    li {
+                        display: block;
+                        width: 100%;
+                        margin: 10px 0.5%;
+                        a {
+                            text-align: center;
+                            img {
+                                width: 100%;
+                                margin: auto;
+                                transition-duration: 0.5s;
+                            }
+                            h5 {
+                                text-transform: uppercase;
+                                font-size: 18px;
+                                margin: 10px 0px;
+                            }
+                            p {
+                                font-size: 16px;
+                                color: #555555;
+                                font-weight: 600;
+                                padding: 10px 0px;
+                            }
+                            .view {
+                                text-transform: uppercase;
+                                color: #d62f29;
+                                padding: 5px 20px;
+                                transition-duration: 0.5s;
+                            }
+                            &:hover {
+                                img {
+                                    opacity: 0.4;
+                                    transition-duration: 0.5s;
+                                }
+                                .view {
+                                    transition-duration: 0.5s;
+                                    letter-spacing: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

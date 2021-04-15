@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+article .main_wrap .slider .slider_bg img {
+  width: 100%;
+  height: 100vh;
+}
+
+article .main_wrap .slider .slick-next {
+  right: 75px;
+}
+
+article .main_wrap .about_slogun {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+article .main_wrap .about_slogun h2,
+article .main_wrap .about_slogun h4 {
+  color: #000155;
+}
+
+article .main_wrap .about_slogun h2 {
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+article .main_wrap .about_slogun h4 {
+  padding: 30px 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+article .main_wrap .about_slogun p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+article .main_wrap .about_img_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 150vh;
+}
+
+article .main_wrap .about_img_area div .haif_img {
+  width: 100%;
+  height: 50vh;
+  vertical-align: top;
+}
+
+article .main_wrap .about_img_area div .long_img {
+  width: 100%;
+  height: 100vh;
+  vertical-align: top;
+}
+
+article .main_wrap .about_img_area div .logo {
+  margin: 12.5vh 0px;
+  width: 100%;
+  height: 25vh;
+}
+
+article .main_wrap .about_img_area .double_img,
+article .main_wrap .about_img_area .triple_img {
+  width: 50%;
+  height: 150vh;
+}
+
+article .main_wrap .map_area {
+  text-align: center;
+  padding: 100px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+article .main_wrap .map_area h2 {
+  color: #000155;
+  font-size: 44px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+article .main_wrap .map_area h4 {
+  padding: 30px 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+article .main_wrap .last_img {
+  height: 100vh;
+  margin-top: 0;
+  position: relative;
+}
+
+article .main_wrap .last_img img {
+  width: 100%;
+  height: 100vh;
+}
+
+article .main_wrap .last_img h4 {
+  position: absolute;
+  text-transform: uppercase;
+  top: 80%;
+  left: 50%;
+  color: #f8f8f8;
+  opacity: 0.7;
+  letter-spacing: 8px;
+  font-size: 36px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 890px) {
+  article .main_wrap .slider .slider_bg img {
+    width: 100%;
+    height: 100vh;
+  }
+  article .main_wrap .slider .slick-next {
+    right: 75px;
+  }
+  article .main_wrap .about_slogun {
+    text-align: center;
+    padding: 100px 0px;
+  }
+  article .main_wrap .about_slogun h2,
+  article .main_wrap .about_slogun h4 {
+    color: #000155;
+  }
+  article .main_wrap .about_slogun h2 {
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+  article .main_wrap .about_slogun h4 {
+    padding: 30px 0px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  article .main_wrap .about_slogun p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+  article .main_wrap .about_img_area {
+    display: block;
+    width: 100%;
+    height: 150vh;
+  }
+  article .main_wrap .about_img_area div .haif_img {
+    width: 200%;
+    height: 50vh;
+    vertical-align: top;
+  }
+  article .main_wrap .about_img_area div .long_img {
+    width: 200%;
+    height: 100vh;
+    vertical-align: top;
+  }
+  article .main_wrap .about_img_area div .logo {
+    display: none;
+    width: 200%;
+    height: 25vh;
+  }
+  article .main_wrap .about_img_area .double_img,
+  article .main_wrap .about_img_area .triple_img {
+    width: 50%;
+    height: 150vh;
+  }
+  article .main_wrap .map_area {
+    text-align: center;
+    padding: 100px 0px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  article .main_wrap .map_area h2 {
+    color: #000155;
+    font-size: 44px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  article .main_wrap .map_area h4 {
+    padding: 30px 0px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  article .main_wrap .last_img {
+    height: 30vh;
+    margin-top: 0;
+    position: relative;
+  }
+  article .main_wrap .last_img img {
+    width: 100%;
+    height: 30vh;
+  }
+  article .main_wrap .last_img h4 {
+    display: none;
+    position: absolute;
+    text-transform: uppercase;
+    top: 80%;
+    left: 50%;
+    color: #f8f8f8;
+    opacity: 0.7;
+    letter-spacing: 8px;
+    font-size: 36px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}

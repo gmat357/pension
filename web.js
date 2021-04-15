@@ -38,12 +38,15 @@ const indexRouter = require('./routers/index');
 
 const seocheonRouter = require('./routers/seocheon/index');
 
+const daecheonRouter = require('./routers/daecheon/index');
+
 
 app.use('/public',express.static(path.join(__dirname,"public")));
 app.use('/public/iksan',express.static(path.join(__dirname,"public")));
 app.use('/public/buan',express.static(path.join(__dirname,"public")));
 app.use('/public/gunsan',express.static(path.join(__dirname,"public")));
 app.use('/public/kimje',express.static(path.join(__dirname,"public")));
+app.use('/html/daecheon',express.static(path.join(__dirname,"html")));
 app.set('views',path.join(__dirname,"views"));
 app.set('view engine','ejs');
 
@@ -93,6 +96,16 @@ app.get('/seocheon/room_sub',seocheonRouter);
 app.get('/seocheon/facilities',seocheonRouter);
 app.get('/seocheon/service',seocheonRouter);
 app.get('/seocheon/reservation',seocheonRouter);
+
+app.get('/daecheon',daecheonRouter);
+app.get('/daecheon/about',daecheonRouter);
+app.get('/daecheon/room',daecheonRouter);
+app.get('/daecheon/room_sub',daecheonRouter);
+app.get('/daecheon/facilities',daecheonRouter);
+app.get('/daecheon/facilities_sub',daecheonRouter);
+app.get('/daecheon/service',daecheonRouter);
+app.get('/daecheon/reservation',daecheonRouter);
+app.get('/daecheon/community',daecheonRouter);
 
 app.listen(port,()=>{console.log(port+"server")});
 

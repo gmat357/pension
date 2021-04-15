@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/daecheon/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../public/daecheon/css/set.css">
+    <link rel="stylesheet" href="../public/daecheon/css/nav.css">
+    <link rel="stylesheet" href="../public/daecheon/css/footer.css">
+    <link rel="stylesheet" href="../public/daecheon/css/facilities.css">
+    <title>대천펜션</title>
+</head>
+
+<body>
+    <header class="header_container"></header>
+    <nav class="nav_container"></nav>
+    <article class="article_container">
+        <div class="facillities_wrap">
+            <h2>SPECIAL FOR YOU</h2><br>
+            <a href="/daecheon/facilities_sub">
+                <div class="deg_box">
+                    <div class="contents">
+                        <span class="img_icon" id="icon1"></span>
+                        <h6>100평 독채 풀빌라</h6>
+                        <p>unshared house</p>
+                        <span class="go"></span>
+                    </div>
+                </div>
+            </a><br>
+            <a href="/daecheon/facilities_sub">
+                <div class="deg_box">
+                    <div class="contents">
+                        <span class="img_icon" id="icon2"></span>
+                        <h6>야외 수영장</h6>
+                        <p>outdoor pool</p>
+                        <span class="go"></span>
+                    </div>
+                </div>
+            </a>
+            <div class="none"></div>
+            <a href="/daecheon/facilities_sub">
+                <div class="deg_box">
+                    <div class="contents">
+                        <span class="img_icon" id="icon3"></span>
+                        <h6>카페 & 레스토랑</h6>
+                        <p>cafe & restaurant</p>
+                        <span class="go"></span>
+                    </div>
+                </div>
+            </a><br>
+            <a href="/daecheon/facilities_sub">
+                <div class="deg_box">
+                    <div class="contents">
+                        <span class="img_icon" id="icon4"></span>
+                        <h6>실내 온수 수영장 스파</h6>
+                        <p> swmming pool&jet spa</p>
+                        <span class="go"></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </article>
+    <footer class="footer_container"></footer>
+    <script>
+        $(function () {
+            var icon = [];
+            var imgIcon = $(".img_icon");
+            var degBox = $('.deg_box');
+
+            $(".nav_container").load('../public/daecheon/layout/nav.html');
+            $(".footer_container").load('../public/daecheon/layout/footer.html');
+
+            for (var i = 0; i < imgIcon.length; i++) {
+                icon.push($("#" + imgIcon.eq(i).attr("id")));
+                $(icon[i]).attr("style", "background:url(../public/daecheon/img/icon" + (i + 1) + ".png) no-repeat;");
+            }
+
+            degBox.each(function (index) {
+                $(this).hover(function () {
+                    imgChange($(this), "_on");
+                }, function () {
+                    imgChange($(this), "");
+                });
+            });
+
+            function imgChange(element, rename) {
+                var thisChildren = element.children(".contents").children(".img_icon");
+                var thisImg = thisChildren.attr("id") + rename + ".png";
+                thisChildren.attr("style", "background:url(../public/daecheon/img/" + thisImg + ") no-repeat;");
+            }
+
+        });
+    </script>
+</body>
+
+</html>
