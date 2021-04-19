@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../public/taean/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/taean/slick/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Orbitron&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/taean/css/main.css">
+    <link rel="stylesheet" href="../public/taean/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../public/taean/fullPage.js-master/src/fullpage.css" />
+    <!-- <script src="../public/taean/fullPage.js-master/src/fullpage.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+    <title>TaeAn</title>
+</head>
+
+<body>
+    <!-- 상단메뉴 -->
+    <header class="header"></header>
+    <!-- 상단메뉴 -->
+    <!-- 네비메뉴 -->
+    <nav class="navi"></nav>
+    <!-- 네비메뉴 -->
+    <!-- 배경 슬라이드 -->
+    <article class="article">
+        <div class="backgroundImg " id="fullpage">
+            <div class="section active" id="section0">
+                <img src="../public/taean/img/beach1.jpg" alt="">
+                <div class="text_area">
+                    <p class="brandName">web making by speed</p> <span class="nowPageNum">
+                        <span class="num">1</span>
+                    </span>
+                    <h2 class="subPageName">Shortcut to information page <br>
+                        See more
+                    </h2>
+                </div>
+                <div class="articleFooter">
+                    <p class="copyright">Copyright 2021 Web's Republic. All rights reserved.</p>
+                    <p class="by"><a href="#" target="_blank"><strong>by SPEED</strong></a></p>
+                </div>
+                <p class="site_info">
+                    태안 프리미엄 리조트는 프라이빗한 공간과 <br>
+                    최상의 서비스로 이용하시는 동안<br>
+                    편안하고 쾌적한 여행을 즐기실 수 있습니다.
+                </p>
+            </div>
+            <div class="section" id="section1">
+                <img src="../public/taean/img/beach2.jpg" alt="">
+                <div class="text_area">
+                    <p class="brandName">web making by speed</p> <span class="nowPageNum">
+                        <span class="num">2</span>
+                    </span>
+                    <h2 class="subPageName">Shortcut to information page <br>
+                        See more
+                    </h2>
+                </div>
+                <div class="articleFooter">
+                    <p class="copyright">Copyright 2021 Web's Republic. All rights reserved.</p>
+                    <p class="by"><a href="#" target="_blank"><strong>by SPEED</strong></a></p>
+                </div>
+                <p class="site_info">
+                    태안 프리미엄 리조트는 프라이빗한 공간과 <br>
+                    최상의 서비스로 이용하시는 동안<br>
+                    편안하고 쾌적한 여행을 즐기실 수 있습니다.
+                </p>
+            </div>
+            <div class="section" id="section2">
+                <img src="../public/taean/img/beach3.jpg" alt="">
+                <div class="text_area">
+                    <p class="brandName">web making by speed</p> <span class="nowPageNum">
+                        <span class="num">3</span>
+                    </span>
+                    <h2 class="subPageName">Shortcut to information page <br>
+                        See more
+                    </h2>
+                </div>
+                <div class="articleFooter">
+                    <p class="copyright">Copyright 2021 Web's Republic. All rights reserved.</p>
+                    <p class="by"><a href="#" target="_blank"><strong>by SPEED</strong></a></p>
+                </div>
+                <p class="site_info">
+                    태안 프리미엄 리조트는 프라이빗한 공간과 <br>
+                    최상의 서비스로 이용하시는 동안<br>
+                    편안하고 쾌적한 여행을 즐기실 수 있습니다.
+                </p>
+            </div>
+            <div class="section" id="section3">
+                <img src="../public/taean/img/beach4.jpg" alt="">
+                <div class="text_area">
+                    <p class="brandName">web making by speed</p> <span class="nowPageNum">
+                        <span class="num">4</span>
+                    </span>
+                    <h2 class="subPageName">Shortcut to information page <br>
+                        See more
+                    </h2>
+                </div>
+                <div class="articleFooter">
+                    <p class="copyright">Copyright 2021 Web's Republic. All rights reserved.</p>
+                    <p class="by"><a href="#" target="_blank"><strong>by SPEED</strong></a></p>
+                </div>
+                <p class="site_info">
+                    태안 프리미엄 리조트는 프라이빗한 공간과 <br>
+                    최상의 서비스로 이용하시는 동안<br>
+                    편안하고 쾌적한 여행을 즐기실 수 있습니다.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <script type="text/javascript" src="../public/taean/fullPage.js-master/src/fullpage.js"></script>
+
+    <script>
+        $(".header").load('../public/taean/layout/header.html');
+        $(".navi").load('../public/taean/layout/nav.html');
+        var fullpage = new fullpage('#fullpage', {
+            normalScrollElements: '.scrollable-element',
+            navigation: true,
+            navigationPosition: 'right',
+        });
+
+        //원그리기
+        var nowPage = 5, drowingTime;
+        $(window).load(function () {
+            draw(101, '.nowPageNum', '#fff');
+        });
+
+        function draw(max, classname, colorname) {
+            var i = 1;
+            drowingTime = fullpage.getActiveSection().index;
+            var func1 = setInterval(function () {
+                if (i < max) {
+                    color1(i, classname, colorname);
+                    i++;
+                    nowPage = fullpage.getActiveSection().index;
+                    if (drowingTime != nowPage) {
+                        clearInterval(func1);
+                        draw(101, '.nowPageNum', '#fff');
+                    }
+                }
+                else {
+                    clearInterval(func1);
+
+                    if (nowPage == 3) {
+                        fullpage.moveTo(1);
+                        draw(101, '.nowPageNum', '#fff');
+                    }
+                    else if (nowPage != fullpage.getActiveSection().index) {
+                        draw(101, '.nowPageNum', '#fff');
+                    }
+                    else {
+                        fullpage.moveSectionDown(true);
+                        draw(101, '.nowPageNum', '#fff');
+
+                    }
+                }
+            }, 50);
+        }
+        function color1(i, classname, colorname) {
+            $(classname).css({
+                "background": "conic-gradient(" + colorname + " 0% " + i + "%, #00000000 " + i + "% 100%)"
+            });
+        }
+    </script>
+    <script src="../public/taean/js/menu.js"></script>
+</body>
+
+</html>

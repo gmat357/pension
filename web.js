@@ -40,6 +40,8 @@ const seocheonRouter = require('./routers/seocheon/index');
 
 const daecheonRouter = require('./routers/daecheon/index');
 
+const taeanRouter = require('./routers/taean/index');
+
 
 app.use('/public',express.static(path.join(__dirname,"public")));
 app.use('/public/iksan',express.static(path.join(__dirname,"public")));
@@ -47,6 +49,7 @@ app.use('/public/buan',express.static(path.join(__dirname,"public")));
 app.use('/public/gunsan',express.static(path.join(__dirname,"public")));
 app.use('/public/kimje',express.static(path.join(__dirname,"public")));
 app.use('/html/daecheon',express.static(path.join(__dirname,"html")));
+app.use('/taean/about/:page',express.static(path.join(__dirname,"public")));
 app.set('views',path.join(__dirname,"views"));
 app.set('view engine','ejs');
 
@@ -106,6 +109,17 @@ app.get('/daecheon/facilities_sub',daecheonRouter);
 app.get('/daecheon/service',daecheonRouter);
 app.get('/daecheon/reservation',daecheonRouter);
 app.get('/daecheon/community',daecheonRouter);
+
+app.get('/taean',taeanRouter);
+app.get('/taean/about/:page',taeanRouter);
+app.get('/taean/villa',taeanRouter);
+app.get('/taean/villa_sub',taeanRouter);
+app.get('/taean/special',taeanRouter);
+app.get('/taean/facilities',taeanRouter);
+app.get('/taean/community',taeanRouter);
+app.get('/taean/around',taeanRouter);
+app.get('/taean/qna',taeanRouter);
+app.get('/taean/review',taeanRouter);
 
 app.listen(port,()=>{console.log(port+"server")});
 

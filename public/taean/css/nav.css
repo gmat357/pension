@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body .header {
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+}
+
+body .header h1 {
+  display: inline-block;
+}
+
+body .header h1 .pc_logo {
+  position: absolute;
+  left: 5%;
+  width: 200px;
+  height: 120px;
+}
+
+body .header .login {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  vertical-align: top;
+}
+
+body .header .login a,
+body .header .login span {
+  font-size: 14px;
+  color: #fff;
+}
+
+body .header .menu_btn {
+  position: absolute;
+  top: 50px;
+  right: 5%;
+  cursor: pointer;
+}
+
+body .header .menu_btn img {
+  width: 40px;
+  height: 30px;
+}
+
+body .navi {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+body .navi h1 img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 200px;
+}
+
+body .navi .x_btn img {
+  position: absolute;
+  top: 50px;
+  right: 5%;
+  width: 40px;
+  cursor: pointer;
+}
+
+body .navi .menuUl {
+  width: 90%;
+  margin: 0 auto;
+  padding: 250px 0 180px;
+}
+
+body .navi .menuUl .menuLi {
+  padding: 0 0 6px 0px;
+  font-size: 72px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .navi .menuUl .menuLi:hover {
+  border-left: 10px solid #000155;
+  padding: 0 0 6px 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  letter-spacing: 0.1em;
+}
+
+body .navi p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.8em;
+}
+
+@media (max-width: 890px) {
+  body .navi .menuUl .menuLi {
+    font-size: 38px;
+  }
+}

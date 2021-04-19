@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Orbitron&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/taean/css/nav.css">
+    <link rel="stylesheet" href="../public/taean/css/villa_sub.css">
+    <link rel="stylesheet" href="../public/taean/css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>taean</title>
+</head>
+
+<body>
+    <header class="header"></header>
+    <nav class="navi" style="top:0;right:100%"></nav>
+    <article>
+        <div class="about_wrap">
+            <div class="page_head">
+                <h2>community</h2>
+                <h3 class="sub_pageName">문의사항</h3>
+                <ul class="subMenu_ul">
+                    <li id="sub_menu1">
+                        <a href="/taean/community">공지사항</a>
+                    </li>
+                    <li id="sub_menu2" style="border: 3px solid #21bbb1; background-color: #21bbb1;">
+                        <a href="/taean/qna">문의사항</a>
+                    </li>
+                    <li id="sub_menu3">
+                        <a href="/taean/review">여행후기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contents_wrap">
+                <div class="contents_head">
+                    <a href="/taean/community"> <span class="left_btn">&lt</span></a>
+                    <h4 class="contents_title">문의사항</h4>
+                    <p class="contents_title_info">펜션 문의사항 입니다.</p>
+                    <a href="/taean/review"><span class="right_btn">&gt</span></a>
+                </div>
+
+                <div class="info_wrap">
+                    <div class="room_info" style="padding: 0;">
+
+                        <div class="cost_info" style="padding: 0;">
+                            <p class="room_info_text">Total 1건 1페이지</p>
+                            <table class="cost_table">
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>글쓴이</th>
+                                        <th>날짜</th>
+                                        <th>조회</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 5%;">1</td>
+                                        <td style="width: 70%; text-align: left;">게시판이 오픈되었습니다.</td>
+                                        <td style="width: 10%;">관리자</td>
+                                        <td style="width: 10%;">04-19</td>
+                                        <td style="width: 5%;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </article>
+    <footer class="footer"></footer>
+    <script>
+        $(function () {
+            $(".header").load('../public/taean/layout/header.html');
+            $(".navi").load('../public/taean/layout/nav.html');
+            $(".footer").load('../public/taean/layout/footer.html');
+        });
+    </script>
+    <script src="../public/taean/js/menu.js"></script>
+    <script>
+        $(function () {
+            onOff.on = 0;
+            onOff.off = 100;
+            onOff.position = "right";
+        });
+    </script>
+
+</body>
+
+</html>

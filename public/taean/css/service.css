@@ -1,0 +1,214 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+article .room_wrap .slider .slider_bg img {
+  width: 100%;
+  height: 100vh;
+}
+
+article .room_wrap .slider .slick-next {
+  right: 75px;
+}
+
+article .room_wrap .room_reservation {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+article .room_wrap .room_reservation h2 {
+  color: #000155;
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+article .room_wrap .room_reservation h4 {
+  color: #777777;
+  padding: 30px 0px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+article .room_wrap .room_reservation p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+article .room_wrap .room_reservation table {
+  width: 100%;
+  height: 180px;
+  margin: auto auto 40px auto;
+  border-collapse: collapse;
+  border-bottom: 1px solid #bbb;
+}
+
+article .room_wrap .room_reservation table p {
+  text-align: center;
+  font-size: 14px;
+}
+
+article .room_wrap .room_reservation table thead {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+article .room_wrap .room_reservation table td {
+  border-left: 1px solid #bbb;
+  position: relative;
+}
+
+article .room_wrap .room_reservation table td .bottom_text {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+article .room_wrap .room_reservation table th {
+  background-color: #f8f8f8;
+}
+
+article .room_wrap .room_reservation table td,
+article .room_wrap .room_reservation table th {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+article .room_wrap .room_reservation .reservation_btn {
+  text-transform: uppercase;
+  border: #d62f29 1px solid;
+  color: #d62f29;
+  padding: 10px 40px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-weight: 600;
+}
+
+article .room_wrap .room_reservation .reservation_btn:hover {
+  color: #fff;
+  background-color: #d62f29;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+article .room_wrap .room_reservation .room_info {
+  margin: 40px 0;
+  position: relative;
+  height: 200px;
+  padding: 20px;
+  background-color: #effff0;
+  overflow: hidden;
+}
+
+article .room_wrap .room_reservation .room_info .block_info {
+  text-align: left;
+}
+
+article .room_wrap .room_reservation .room_info .block_info h5 {
+  font-size: 16px;
+  padding: 0 0 30px 0;
+}
+
+article .room_wrap .room_reservation .room_info .block_info span {
+  display: inline-block;
+  width: 120px;
+  color: #555;
+  font-size: 14px;
+}
+
+article .room_wrap .room_reservation .room_info .block_info p {
+  display: inline-block;
+  width: calc(100% - 140px);
+  position: relative;
+}
+
+article .room_wrap .room_reservation .room_info .block_info p b {
+  position: absolute;
+  color: #d62f29;
+  font-size: 12px;
+}
+
+article .room_wrap .room_reservation .room_info .look_box {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #effff0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+}
+
+article .room_wrap .room_reservation .room_info .look_box .more_btn {
+  display: inline-block;
+  margin-top: 13px;
+  background-color: #d62f29;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+article .room_wrap .room_reservation .room_info .look_box .more_btn img {
+  margin-right: 10px;
+}
+
+article .room_wrap .room_reservation .room_info .look_box .more_btn:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: #00a075;
+}
+
+article .room_wrap .room_reservation .room_info .hidden_info {
+  display: block;
+  text-align: left;
+  margin: 60px 0;
+}
+
+article .room_wrap .room_reservation .room_info .hidden_info h5 {
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+article .room_wrap .room_reservation .room_info .hidden_info span {
+  display: inline-block;
+  width: 120px;
+  color: #555;
+  font-size: 14px;
+}
+
+article .room_wrap .room_reservation .room_info .hidden_info p {
+  display: inline-block;
+  width: calc(100% - 140px);
+  position: relative;
+}
+
+article .room_wrap .room_reservation .room_info .hidden_info p b {
+  position: absolute;
+  color: #d62f29;
+  font-size: 12px;
+}
+
+@media (max-width: 890px) {
+  b {
+    display: none;
+  }
+}

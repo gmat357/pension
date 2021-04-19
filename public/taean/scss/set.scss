@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+$tablet: 1230px;
+$mobile: 890px;
+
+@mixin h2_font {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 54px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+@mixin page_name_font {
+    color: #fff;
+    font-size: 24px;
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}

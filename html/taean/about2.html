@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Orbitron&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/taean/css/nav.css">
+    <link rel="stylesheet" href="../public/taean/css/about.css">
+    <link rel="stylesheet" href="../public/taean/css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>taean</title>
+</head>
+
+<body>
+    <header class="header"></header>
+    <nav class="navi" style="top:0;right:100%"></nav>
+    <article>
+        <div class="about_wrap">
+            <div class="page_head">
+                <h2>about</h2>
+                <h3 class="sub_pageName">소개</h3>
+                <ul class="subMenu_ul">
+                    <li id="sub_menu1">
+                        <a href="/taean/about/1">추가메뉴</a>
+                    </li>
+                    <li id="sub_menu2" style="border: 3px solid #21bbb1; background-color: #21bbb1;">
+                        <a href="/taean/about/2">펜션전경</a>
+                    </li>
+                    <li id="sub_menu3">
+                        <a href="/taean/about/3">오시는길</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contents_wrap">
+                <div class="contents_head">
+                    <a href="/taean/about/1"> <span class="left_btn">&lt</span></a>
+                    <h4 class="contents_title">펜션정경</h4>
+                    <p class="contents_title_info">스피드 펜션으로 전경을 보실 수 있습니다.</p>
+                    <a href="/taean/about/3"><span class="right_btn">&gt</span></a>
+                </div>
+
+                <ul class="contents_ul">
+                    <li class="contents_li">
+                        <img src="../public/taean/img/night2.jpg" alt="">
+                        <h5 class="li_title">contens</h5>
+                        <p class="li_info">lee dong uk</p>
+                        <p class="li_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est a minus,
+                            adipisci
+                            asperiores totam? Ab optio, cum impedit cupiditate</p>
+                    </li>
+                    <li class="contents_li">
+                        <img src="../public/taean/img/night2.jpg" alt="">
+                        <h5 class="li_title">contens</h5>
+                        <p class="li_info">lee dong uk</p>
+                        <p class="li_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est a minus,
+                            adipisci
+                            asperiores totam? Ab optio, cum impedit cupiditate</p>
+                    </li>
+                    <li class="contents_li">
+                        <img src="../public/taean/img/night2.jpg" alt="">
+                        <h5 class="li_title">contens</h5>
+                        <p class="li_info">lee dong uk</p>
+                        <p class="li_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est a minus,
+                            adipisci
+                            asperiores totam? Ab optio, cum impedit cupiditate</p>
+                    </li>
+                    <li class="contents_li">
+                        <img src="../public/taean/img/night2.jpg" alt="">
+                        <h5 class="li_title">contens</h5>
+                        <p class="li_info">lee dong uk</p>
+                        <p class="li_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est a minus,
+                            adipisci
+                            asperiores totam? Ab optio, cum impedit cupiditate</p>
+                    </li>
+                </ul>
+
+    </article>
+    <footer class="footer"></footer>
+    <script>
+        $(function () {
+            $(".header").load('../public/taean/layout/header.html');
+            $(".navi").load('../public/taean/layout/nav.html');
+            $(".footer").load('../public/taean/layout/footer.html');
+        });
+    </script>
+    <script src="../public/taean/js/menu.js"></script>
+    <script>
+        $(function () {
+            onOff.on = 0;
+            onOff.off = 100;
+            onOff.position = "right";
+        });
+    </script>
+
+</body>
+
+</html>

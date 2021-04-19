@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Orbitron&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/taean/css/nav.css">
+    <link rel="stylesheet" href="../public/taean/css/about.css">
+    <link rel="stylesheet" href="../public/taean/css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>taean</title>
+</head>
+
+<body>
+    <header class="header"></header>
+    <nav class="navi" style="top:0;right:100%"></nav>
+    <article>
+        <div class="about_wrap">
+            <div class="page_head">
+                <h2>about</h2>
+                <h3 class="sub_pageName">소개</h3>
+                <ul class="subMenu_ul">
+                    <li id="sub_menu1" style="border: 3px solid #21bbb1; background-color: #21bbb1;">
+                        <a href="villa.html">전체보기</a>
+                    </li>
+                    <li id="sub_menu2">
+                        <a href="villa_sub.html">ROOM 101</a>
+                    </li>
+                    <li id="sub_menu3">
+                        <a href="villa_sub.html">ROOM 102</a>
+                    </li>
+                    <li id="sub_menu3">
+                        <a href="villa_sub.html">ROOM 103</a>
+                    </li>
+                    <li id="sub_menu3">
+                        <a href="villa_sub.html">ROOM 104</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contents_wrap">
+                <div class="contents_head">
+                    <a href="about.html"> <span class="left_btn">&lt</span></a>
+                    <h4 class="contents_title">객실 전체보기</h4>
+                    <p class="contents_title_info">원하는 객실을 선택하시면 자세한 안내를 받으실 수 있습니다.</p>
+                    <a href="about3.html"><span class="right_btn">&gt</span></a>
+                </div>
+
+                <ul class="contents_ul">
+                    <li class="contents_li">
+                        <a href="room_sub.html">
+                            <img src="../public/taean/img/room4.jpg" alt="">
+                            <h5 class="li_title">ROOM 101</h5>
+                        </a>
+                    </li>
+                    <li class="contents_li">
+                        <a href="room_sub.html">
+                            <img src="../public/taean/img/room4.jpg" alt="">
+                            <h5 class="li_title">ROOM 102</h5>
+                        </a>
+                    </li>
+                    <li class="contents_li">
+
+                        <img src="../public/taean/img/room4.jpg" alt="">
+                        <h5 class="li_title">ROOM 103</h5>
+                        </a>
+                    </li>
+                    <li class="contents_li">
+                        <a href="room_sub.html">
+                            <img src="../public/taean/img/room4.jpg" alt="">
+                            <h5 class="li_title">ROOM 104</h5>
+                        </a>
+                    </li>
+                    <li class="contents_li">
+                        <a href="room_sub.html"></a>
+                        <img src="../public/taean/img/room4.jpg" alt="">
+                        <h5 class="li_title">ROOM 105</h5>
+                        </a>
+                    </li>
+                </ul>
+
+    </article>
+    <footer class="footer"></footer>
+    <script>
+        $(function () {
+            $(".header").load('../public/taean/layout/header.html');
+            $(".navi").load('../public/taean/layout/nav.html');
+            $(".footer").load('../public/taean/layout/footer.html');
+        });
+    </script>
+    <script src="../public/taean/js/menu.js"></script>
+    <script>
+        $(function () {
+            onOff.on = 0;
+            onOff.off = 100;
+            onOff.position = "right";
+        });
+    </script>
+
+</body>
+
+</html>

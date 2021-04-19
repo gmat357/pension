@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+article {
+  height: 100vh;
+}
+
+article .room_wrap .slider .slider_bg img {
+  width: 100%;
+  height: 100vh;
+}
+
+article .room_wrap .slider .slick-next {
+  right: 75px;
+}
+
+article .room_wrap .slider .slick-dots {
+  bottom: 30px;
+}

@@ -1,0 +1,198 @@
+@import "set";
+body {
+    position: relative;
+    height: 100vh;
+    .article {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        .backgroundImg {
+            .section {
+                width: 100%;
+                height: 100vh;
+                img {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: -2;
+                }
+                .text_area {
+                    width: 90%;
+                    margin: 0 auto;
+                    h2,
+                    p,
+                    .num {
+                        color: #fff;
+                        font-size: 20px;
+                        text-shadow: 0 0 4px black;
+                        letter-spacing: -0.6px;
+                        text-transform: uppercase;
+                    }
+                    .brandName {
+                        display: inline;
+                        margin-right: 20px;
+                    }
+                    .nowPageNum {
+                        display: inline-block;
+                        text-align: center;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        position: relative;
+                        transform: translate(0, 30%);
+                        .num {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            display: inline-block;
+                            text-align: center;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            background: #000000;
+                        }
+                    }
+                    .subPageName {
+                        font-size: 72px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        line-height: 1.1em;
+                        transition-duration: 0.5s;
+                        letter-spacing: -0.6px;
+                        padding: 50px 0;
+                        text-shadow: 0 0 7px black;
+                        &:hover {
+                            border-left: 10px solid #000155;
+                            padding: 0 0 6px 20px;
+                            transition-duration: 0.5s;
+                        }
+                    }
+                }
+                .articleFooter {
+                    position: absolute;
+                    left: 5%;
+                    bottom: 5%;
+                    p,
+                    strong {
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 1.8em;
+                        text-shadow: 0 0 7px black;
+                    }
+                }
+                .site_info {
+                    position: absolute;
+                    right: 5%;
+                    bottom: 6%;
+                    color: #fff;
+                    font-size: 20px;
+                    border-right: 1px solid #fff;
+                    padding-right: 20px;
+                    text-shadow: 0 0 7px black;
+                }
+            }
+        }
+    }
+}
+@include tablet {
+}
+@include mobile {
+    body {
+        position: relative;
+        height: 100vh;
+        .article {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            .backgroundImg {
+                .section {
+                    width: 100%;
+                    height: 100vh;
+                    img {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100vh;
+                        z-index: -2;
+                    }
+                    .text_area {
+                        width: 90%;
+                        margin: 0 auto;
+                        h2,
+                        p,
+                        .num {
+                            color: #fff;
+                            font-size: 16px;
+                            text-shadow: 0 0 4px black;
+                            letter-spacing: -0.6px;
+                            text-transform: uppercase;
+                        }
+                        .brandName {
+                            display: inline;
+                            margin-right: 20px;
+                        }
+                        .nowPageNum {
+                            display: inline-block;
+                            text-align: center;
+                            border-radius: 50%;
+                            width: 40px;
+                            height: 40px;
+                            position: relative;
+                            transform: translate(0, 30%);
+                            .num {
+                                position: absolute;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                display: inline-block;
+                                text-align: center;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background: #000000;
+                            }
+                        }
+                        .subPageName {
+                            font-size: 38px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            line-height: 1.1em;
+                            transition-duration: 0.5s;
+                            letter-spacing: -0.6px;
+                            padding: 50px 0;
+                            text-shadow: 0 0 7px black;
+                            &:hover {
+                                border-left: 10px solid #000155;
+                                padding: 0 0 6px 20px;
+                                transition-duration: 0.5s;
+                            }
+                        }
+                    }
+                    .articleFooter {
+                        position: absolute;
+                        left: 5%;
+                        bottom: 5%;
+                        p,
+                        strong {
+                            color: #fff;
+                            font-size: 14px;
+                            line-height: 1.8em;
+                            text-shadow: 0 0 7px black;
+                        }
+                    }
+                    .site_info {
+                        display: none;
+                        position: absolute;
+                        right: 5%;
+                        bottom: 6%;
+                        color: #fff;
+                        font-size: 20px;
+                        border-right: 1px solid #fff;
+                        padding-right: 20px;
+                        text-shadow: 0 0 7px black;
+                    }
+                }
+            }
+        }
+    }
+}
