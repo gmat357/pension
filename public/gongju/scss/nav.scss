@@ -1,0 +1,83 @@
+@import "set";
+
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    transition-duration: 0.3s;
+    background-color: rgba(0.4, 0.4, 0.4, 0.4);
+    h1 {
+        width: 150px;
+        height: 80px;
+        margin-right: auto;
+        p {
+            display: inline-block;
+            width: 150px;
+            height: 80px;
+            cursor: pointer;
+            img {
+                width: 150px;
+                height: 80px;
+            }
+        }
+    }
+    .menu_ul {
+        .menu_li {
+            text-align: center;
+            display: inline-block;
+            p {
+                display: inline-block;
+                text-transform: uppercase;
+                padding: 28px 20px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    .hidden {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        width: 115px;
+        height: 0px;
+        overflow: hidden;
+        .menu_ul2 {
+            background-color: rgba(0.4, 0.4, 0.4, 0.4);
+            .menu_li {
+                text-align: center;
+                p {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    padding: 10px 5px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .menu_btn {
+        display: none;
+        width: 100px;
+        height: 80px;
+        cursor: pointer;
+    }
+}
+
+@include mobile {
+    nav {
+        .menu_ul {
+            .menu_li {
+                text-align: center;
+                display: none;
+            }
+        }
+        .menu_btn {
+            display: block;
+            padding: 25px 20px;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+    }
+}

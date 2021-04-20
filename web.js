@@ -42,6 +42,7 @@ const daecheonRouter = require('./routers/daecheon/index');
 
 const taeanRouter = require('./routers/taean/index');
 
+const gongjuRouter = require('./routers/gongju/index');
 
 app.use('/public',express.static(path.join(__dirname,"public")));
 app.use('/public/iksan',express.static(path.join(__dirname,"public")));
@@ -120,6 +121,8 @@ app.get('/taean/community',taeanRouter);
 app.get('/taean/around',taeanRouter);
 app.get('/taean/qna',taeanRouter);
 app.get('/taean/review',taeanRouter);
+
+app.get('/gongju',gongjuRouter);
 
 app.listen(port,()=>{console.log(port+"server")});
 
