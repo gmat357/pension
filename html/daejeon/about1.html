@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Orbitron&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../public/daejeon/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/daejeon/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../public/daejeon/css/header.css">
+    <link rel="stylesheet" href="../public/daejeon/css/nav.css">
+    <link rel="stylesheet" href="../public/daejeon/css/footer.css">
+    <link rel="stylesheet" href="../public/daejeon/css/about1.css">
+    <link rel="stylesheet" type="text/css" href="../public/daejeon/fullPage.js-master/src/fullpage.css" />
+    <!-- <script src="../public/daejeon/fullPage.js-master/src/fullpage.js"></script> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>daejeon</title>
+</head>
+
+<body>
+    <!-- 상단메뉴 -->
+    <nav class="navi"></nav>
+    <header class="header">
+        <div class="head_wrap">
+            <div class="head_area">
+                <h2>펜션소개</h2>
+                <p>
+                    <a href="#">HOME</a>
+                    >
+                    <a href="#" class="menu_page">펜션소개</a>
+                    >
+                    <a href="" class="sub_menu_page">펜션안내</a>
+                </p>
+            </div>
+            <ul class="sub_nav">
+                <a href="/daejeon/about/1" >
+                    <li>펜션안내</li>
+                </a>
+                <a href="/daejeon/about/2" style="background-color: #614417;">
+                    <li>객실요금</li>
+                </a>
+                <a href="/daejeon/about/3">
+                    <li>이용규칙</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <!-- 상단메뉴 -->
+    <!-- 네비메뉴 -->
+
+    <!-- 네비메뉴 -->
+    <article class="article">
+        <div class="about_wrap">
+            <h2>객실요금</h2>
+            <b>프리미엄 리조트 객실요금을 안내합니다.</b>
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th>객실명</th>
+                        <th>형태</th>
+                        <th>평수</th>
+                        <th>기준/최대</th>
+                        <th>주중</th>
+                        <th>주말</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="text-align: center;font-weight: bold;">101</th>
+                        <td>거실+방/침대룸 2</td>
+                        <td>160m&#178;/50평</td>
+                        <td>10명/15명</td>
+                        <td>400,000원</td>
+                        <td>750,000원</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: center;font-weight: bold;">102</th>
+                        <td>거실+방/침대룸 2</td>
+                        <td>160m&#178;/50평</td>
+                        <td>10명/15명</td>
+                        <td>400,000원</td>
+                        <td>750,000원</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: center;font-weight: bold;">103</th>
+                        <td>거실+방/침대룸 2</td>
+                        <td>160m&#178;/50평</td>
+                        <td>10명/15명</td>
+                        <td>400,000원</td>
+                        <td>750,000원</td>
+                    </tr>
+                </tbody>
+            </table>
+            <b>*바베큐용 숯불추가시 30,000원 추가</b>
+        </div>
+    </article>
+    <footer class="footer">
+    </footer>
+    <script type="text/javascript" src="../public/daejeon/fullPage.js-master/src/fullpage.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/daejeon/slick/slick.js"></script>
+    <script src="../public/daejeon/js/scroll_nav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slide_banner').slick({
+                rtl: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+            });
+        });
+    </script>
+    <script>
+        $(".navi").load('../public/daejeon/layout/nav.html');
+        $(".footer").load('../public/daejeon/layout/footer.html');
+    </script>
+
+</body>
+
+</html>

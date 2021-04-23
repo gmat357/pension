@@ -1,0 +1,45 @@
+@import "set";
+
+body {
+    article {
+        width: 100%;
+        background: url(../img/abt_bg.jpg);
+        .about_wrap {
+            width: 70%;
+            margin: 0 auto;
+            padding: 100px 0px 100px 0px;
+            position: relative;
+            .logo {
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+            }
+            h2 {
+                font-size: 32px;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 20px;
+                b {
+                    color: rgb(148, 99, 8);
+                    font-weight: 400;
+                }
+            }
+            .resort_img {
+                width: 100%;
+                opacity: 0.8;
+            }
+            .about_text {
+                width: 100%;
+                padding: 30px 0;
+                background: url(../img/abt_bg.jpg);
+                h3 {
+                    font-size: 22px;
+                    color: rgb(157, 117, 57);
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

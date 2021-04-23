@@ -44,6 +44,9 @@ const taeanRouter = require('./routers/taean/index');
 
 const gongjuRouter = require('./routers/gongju/index');
 
+const daejeonRouter = require('./routers/daejeon/index');
+
+
 app.use('/public',express.static(path.join(__dirname,"public")));
 app.use('/public/iksan',express.static(path.join(__dirname,"public")));
 app.use('/public/buan',express.static(path.join(__dirname,"public")));
@@ -51,6 +54,9 @@ app.use('/public/gunsan',express.static(path.join(__dirname,"public")));
 app.use('/public/kimje',express.static(path.join(__dirname,"public")));
 app.use('/html/daecheon',express.static(path.join(__dirname,"html")));
 app.use('/taean/about/:page',express.static(path.join(__dirname,"public")));
+app.use('/public/daejeon',express.static(path.join(__dirname,"public")));
+app.use('/daejeon/about/:page',express.static(path.join(__dirname,"public")));
+app.use('/daejeon/room/:page',express.static(path.join(__dirname,"public")));
 app.set('views',path.join(__dirname,"views"));
 app.set('view engine','ejs');
 
@@ -121,6 +127,14 @@ app.get('/taean/community',taeanRouter);
 app.get('/taean/around',taeanRouter);
 app.get('/taean/qna',taeanRouter);
 app.get('/taean/review',taeanRouter);
+
+app.get('/daejeon',daejeonRouter);
+app.get('/daejeon/about/:page',daejeonRouter);
+app.get('/daejeon/room/:page',daejeonRouter);
+app.get('/daejeon/facilities',daejeonRouter);
+app.get('/daejeon/community',daejeonRouter);
+app.get('/daejeon/around',daejeonRouter);
+app.get('/daejeon/location',daejeonRouter);
 
 app.get('/gongju',gongjuRouter);
 

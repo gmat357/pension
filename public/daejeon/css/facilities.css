@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body article {
+  width: 100%;
+}
+
+body article .about_wrap {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0px 100px 0px;
+  position: relative;
+}
+
+body article .about_wrap .logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+body article .about_wrap h2 {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+body article .about_wrap b {
+  display: block;
+  color: #946308;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body article .about_wrap ul {
+  width: 100%;
+  display: flex-box;
+  -webkit-columns: 3;
+          columns: 3;
+}
+
+body article .about_wrap ul li {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px 1%;
+}
+
+body article .about_wrap ul li img {
+  width: 100%;
+}
+
+body article .about_wrap ul li p {
+  text-align: center;
+  padding: 15px 0;
+}

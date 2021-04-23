@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body article {
+  width: 100%;
+  background: url(../img/abt_bg.jpg);
+}
+
+body article .about_wrap {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0px 100px 0px;
+  position: relative;
+}
+
+body article .about_wrap .logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+body article .about_wrap h2 {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body article .about_wrap h2 b {
+  color: #946308;
+  font-weight: 400;
+}
+
+body article .about_wrap .resort_img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+body article .about_wrap .about_text {
+  width: 100%;
+  padding: 30px 0;
+  background: url(../img/abt_bg.jpg);
+}
+
+body article .about_wrap .about_text h3 {
+  font-size: 22px;
+  color: #9d7539;
+}
+
+body article .about_wrap .about_text h3 p {
+  font-size: 14px;
+}

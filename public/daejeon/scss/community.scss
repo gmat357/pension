@@ -1,0 +1,96 @@
+@import "set";
+
+body {
+    article {
+        width: 100%;
+        .about_wrap {
+            width: 70%;
+            margin: 0 auto;
+            padding: 100px 0px 100px 0px;
+            position: relative;
+            .logo {
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+            }
+            h2 {
+                font-size: 32px;
+                font-weight: 400;
+                text-align: center;
+            }
+            b {
+                display: block;
+                color: rgb(148, 99, 8);
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .com_wrap {
+                h3 {
+                    display: inline-block;
+                }
+                .search_box {
+                    position: absolute;
+                    right: 0;
+                    border: #999 1px solid;
+                    input {
+                        border: none;
+                        padding: 5px;
+                        outline: none;
+                    }
+                    .search_btn {
+                        cursor: pointer;
+                        padding: 0 5px;
+                    }
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 10px 0;
+                    text-align: center;
+                    thead {
+                        tr {
+                            border-top: #999 1px solid;
+                            th {
+                                font-size: 14px;
+                                font-weight: 500;
+                                background-color: #f8f8f8;
+                                padding: 5px 0px;
+                            }
+                            th:nth-of-type(1) {
+                                width: 5%;
+                            }
+                            th:nth-of-type(2) {
+                                width: 70%;
+                            }
+                            th:nth-of-type(3) {
+                                width: 10%;
+                            }
+                            th:nth-of-type(4) {
+                                width: 10%;
+                            }
+                            th:nth-of-type(5) {
+                                width: 10%;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            border-top: #bbb 1px solid;
+                            td {
+                                font-size: 14px;
+                                padding: 5px 0px;
+                                border: 1px solid #f0f0f0;
+                            }
+                            td:nth-of-type(2) {
+                                text-align: left;
+                                padding: 5px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

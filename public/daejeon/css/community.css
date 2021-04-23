@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body article {
+  width: 100%;
+}
+
+body article .about_wrap {
+  width: 70%;
+  margin: 0 auto;
+  padding: 100px 0px 100px 0px;
+  position: relative;
+}
+
+body article .about_wrap .logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+body article .about_wrap h2 {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+body article .about_wrap b {
+  display: block;
+  color: #946308;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body article .about_wrap .com_wrap h3 {
+  display: inline-block;
+}
+
+body article .about_wrap .com_wrap .search_box {
+  position: absolute;
+  right: 0;
+  border: #999 1px solid;
+}
+
+body article .about_wrap .com_wrap .search_box input {
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+body article .about_wrap .com_wrap .search_box .search_btn {
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+body article .about_wrap .com_wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  text-align: center;
+}
+
+body article .about_wrap .com_wrap table thead tr {
+  border-top: #999 1px solid;
+}
+
+body article .about_wrap .com_wrap table thead tr th {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f8f8f8;
+  padding: 5px 0px;
+}
+
+body article .about_wrap .com_wrap table thead tr th:nth-of-type(1) {
+  width: 5%;
+}
+
+body article .about_wrap .com_wrap table thead tr th:nth-of-type(2) {
+  width: 70%;
+}
+
+body article .about_wrap .com_wrap table thead tr th:nth-of-type(3) {
+  width: 10%;
+}
+
+body article .about_wrap .com_wrap table thead tr th:nth-of-type(4) {
+  width: 10%;
+}
+
+body article .about_wrap .com_wrap table thead tr th:nth-of-type(5) {
+  width: 10%;
+}
+
+body article .about_wrap .com_wrap table tbody tr {
+  border-top: #bbb 1px solid;
+}
+
+body article .about_wrap .com_wrap table tbody tr td {
+  font-size: 14px;
+  padding: 5px 0px;
+  border: 1px solid #f0f0f0;
+}
+
+body article .about_wrap .com_wrap table tbody tr td:nth-of-type(2) {
+  text-align: left;
+  padding: 5px 10px;
+}

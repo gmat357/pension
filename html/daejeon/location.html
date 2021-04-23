@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Orbitron&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../public/daejeon/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../public/daejeon/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../public/daejeon/css/header.css">
+    <link rel="stylesheet" href="../public/daejeon/css/nav.css">
+    <link rel="stylesheet" href="../public/daejeon/css/footer.css">
+    <link rel="stylesheet" href="../public/daejeon/css/community.css">
+    <link rel="stylesheet" type="text/css" href="../public/daejeon/fullPage.js-master/src/fullpage.css" />
+    <!-- <script src="../public/daejeon/fullPage.js-master/src/fullpage.js"></script> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>daejeon</title>
+</head>
+
+<body>
+    <!-- 상단메뉴 -->
+    <nav class="navi"></nav>
+    <header class="header">
+        <div class="head_wrap">
+            <div class="head_area">
+                <h2>교통안내</h2>
+                <p>
+                    <a href="#">HOME</a>
+                    >
+                    <a href="#" class="menu_page">교통안내</a>
+
+                </p>
+            </div>
+            <!-- <ul class="sub_nav">
+                <a href="#" style="background-color: #614417;">
+                    <li>공지사항</li>
+                </a>
+                <a href="community2.html">
+                    <li>묻고 답하기</li>
+                </a>
+                <a href="community3.html">
+                    <li>여행후기</li>
+                </a>
+            </ul> -->
+        </div>
+    </header>
+    <!-- 상단메뉴 -->
+    <!-- 네비메뉴 -->
+    <!-- 네비메뉴 -->
+    <article class="article">
+        <div class="about_wrap">
+            <h2>교통안내</h2>
+            <b>프리미엄 리조트 오시는 길을 안내합니다.</b>
+            <hr>
+            <br>
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12917.681479913812!2d126.98206273957672!3d35.961146850308246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357015713913bbb5%3A0xedc6644f3f1c69cc!2z7KCE652867aB64-EIOydteyCsOyLnCDrtoDshqHroZw!5e0!3m2!1sko!2skr!4v1618281599496!5m2!1sko!2skr"
+                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </article>
+    <footer class="footer">
+    </footer>
+    <script type="text/javascript" src="../public/daejeon/fullPage.js-master/src/fullpage.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/daejeon/slick/slick.js"></script>
+    <script src="../public/daejeon/js/scroll_nav.js"></script>
+    <script type="text/javascript">
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            arrows: false,
+            centerMode: true,
+            focusOnSelect: true
+        });
+    </script>
+    <script>
+        $(".navi").load('../public/daejeon/layout/nav.html');
+        $(".footer").load('../public/daejeon/layout/footer.html');
+    </script>
+
+</body>
+
+</html>

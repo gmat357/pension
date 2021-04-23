@@ -1,0 +1,105 @@
+@import "set";
+
+body {
+    article {
+        width: 100%;
+        .about_wrap {
+            width: 70%;
+            margin: 0 auto;
+            padding: 100px 0px 100px 0px;
+            position: relative;
+            .logo {
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+            }
+            h2 {
+                font-size: 32px;
+                font-weight: 400;
+                text-align: center;
+            }
+            b {
+                display: block;
+                color: rgb(148, 99, 8);
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .table1 {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+                margin: 30px 0;
+                thead {
+                    tr {
+                        th {
+                            background-color: #7c706b;
+                            border: 1px solid #f0f0f0;
+                            color: #fff;
+                            font-weight: 300;
+                            height: 50px;
+                        }
+                        td {
+                            background-color: #97837a;
+                            border: 1px solid #f0f0f0;
+                            color: #fff;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        height: 80px;
+                        th {
+                            background-color: #f0f0f0;
+                            text-align: left;
+                            padding: 30px 10px;
+                            font-weight: 300;
+                        }
+                        td {
+                            border: 1px solid #f0f0f0;
+                        }
+                    }
+                }
+            }
+            .table2 {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+                margin: 30px 0;
+                thead {
+                    tr {
+                        th {
+                            background-color: #7c706b;
+                            border: 1px solid #f0f0f0;
+                            color: #fff;
+                            font-weight: 300;
+                            height: 80px;
+                        }
+                        td {
+                            background-color: #d9d9d9;
+                            border: 1px solid #f0f0f0;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        th {
+                            background-color: #97837a;
+                            border: 1px solid #f0f0f0;
+                            text-align: center;
+                            padding: 5px 0px;
+                            font-weight: 300;
+                            color: #fff;
+                            width: 25%;
+                        }
+                        td {
+                            border: 1px solid #f0f0f0;
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

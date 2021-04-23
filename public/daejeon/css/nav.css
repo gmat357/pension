@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav h1 {
+  width: 150px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+nav h1 img {
+  width: 100%;
+  height: 130px;
+}
+
+nav .menu_bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+nav .menu_bar a li {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+nav .menu_btn {
+  display: none;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+}
