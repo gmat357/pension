@@ -30,8 +30,15 @@ router.get('/daejeon/around',(req,res)=>{
     res.sendFile(path.join(__dirname,"../../html/daejeon/around.html"));
 });
 
-router.get('/daejeon/community',(req,res)=>{
+router.get('/daejeon/community/:page',(req,res)=>{
+
+    var page = req.params.page;
+    if(page == 1)
     res.sendFile(path.join(__dirname,"../../html/daejeon/community.html"));
+    if(page == 2)
+    res.sendFile(path.join(__dirname,"../../html/daejeon/community2.html"));
+    if(page == 3)
+    res.sendFile(path.join(__dirname,"../../html/daejeon/community3.html"));
 });
 
 router.get('/daejeon/facilities',(req,res)=>{

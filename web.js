@@ -57,6 +57,7 @@ app.use('/taean/about/:page',express.static(path.join(__dirname,"public")));
 app.use('/public/daejeon',express.static(path.join(__dirname,"public")));
 app.use('/daejeon/about/:page',express.static(path.join(__dirname,"public")));
 app.use('/daejeon/room/:page',express.static(path.join(__dirname,"public")));
+app.use('/daejeon/community/:page',express.static(path.join(__dirname,"public")));
 app.set('views',path.join(__dirname,"views"));
 app.set('view engine','ejs');
 
@@ -132,7 +133,7 @@ app.get('/daejeon',daejeonRouter);
 app.get('/daejeon/about/:page',daejeonRouter);
 app.get('/daejeon/room/:page',daejeonRouter);
 app.get('/daejeon/facilities',daejeonRouter);
-app.get('/daejeon/community',daejeonRouter);
+app.get('/daejeon/community/:page',daejeonRouter);
 app.get('/daejeon/around',daejeonRouter);
 app.get('/daejeon/location',daejeonRouter);
 
