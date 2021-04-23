@@ -34,6 +34,10 @@ router.get('/daejeon/community',(req,res)=>{
     res.sendFile(path.join(__dirname,"../../html/daejeon/community.html"));
 });
 
+router.get('/daejeon/facilities',(req,res)=>{
+    res.sendFile(path.join(__dirname,"../../html/daejeon/facilities.html"));
+});
+
 router.get('/daejeon/location',(req,res)=>{
     res.sendFile(path.join(__dirname,"../../html/daejeon/location.html"));
 });
