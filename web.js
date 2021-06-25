@@ -137,6 +137,13 @@ app.get('/daejeon/community/:page',daejeonRouter);
 app.get('/daejeon/around',daejeonRouter);
 app.get('/daejeon/location',daejeonRouter);
 
+ console.log(3.8 + 0.2);
+ console.log(3 / 4);
+ let num = 1;
+ const NUM = 5;
+ console.log(num);
+ console.log(NUM);
+
 app.get('/gongju',gongjuRouter);
 
 app.listen(port,()=>{console.log(port+"server")});
